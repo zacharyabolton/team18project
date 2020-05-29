@@ -1,0 +1,107 @@
+<section class="ticketTypes MC">
+    <h1 class="MC">Ticket Types</h1>
+    <section class="ticketType1 MC">
+        <section class="cost MC">
+            <p class="MC">£30</p>
+        </section>
+        <img src="ticket.jpg" alt="ticket" width="100" class="MC">
+        <section class="ticketDesc MC">
+            <h2  class="MC">Day Ticket</h2>
+            <p class="MC">Access the park for a day</p>
+            <ul class="MC">
+                <li class="MC">Full access to Reading Corner</li>
+                <li class="MC">Full access to Animal Zone</li>
+                <li class="MC">Full access to rides</li>
+                <li class="MC">Upgrade to Annual Pass available on the day if you change your mind</li>
+            </ul>
+            <a href="tickets.html#buyHere" class="MC">Buy Now</a>
+        </section>
+    </section>
+    <section class="ticketType2 MC">
+        <section class="cost MC">
+            <p class="MC">£120</p>
+        </section>        
+        <img src="ticket.jpg" alt="ticket" width="100" class="MC">
+        <section class="ticketDesc MC">
+            <h2  class="MC">Annual Pass</h2>
+            <p class="MC">Access the park for a Whole Year</p>
+            <ul class="MC">
+                <li class="MC">Full access to Reading Corner</li>
+                <li class="MC">Full access to Animal Zone</li>
+                <li class="MC">Full access to rides</li>
+                <li class="MC">Come back again and again for a year</li>
+            </ul>
+            <a href="tickets.html#buyHere" class="MC">Buy Now</a>
+        </section>
+    </section>
+    <section class="ticketType3 MC">
+        <section class="cost MC">
+            <p class="MC">£10</p>
+        </section>    
+        <img src="ticket.jpg" alt="ticket" width="100" class="MC">
+        <section class="ticketDesc MC">
+            <h2  class="MC">Reading Corner Ticket</h2>
+            <p class="MC">Perfect for those who,like the atmosphere but not the rides.</p>
+            <ul class="MC">
+                <li class="MC">Full access to Reading Corner</li>
+                <li class="MC">Full access to Animal Zone</li>
+                <li class="MC">No access to rides</li>
+                <li class="MC">Upgrade on the day if you change your mind</li>
+            </ul>
+            <a href="tickets.html#buyHere" class="MC">Buy Now</a>
+        </section>
+    </section>
+</section>
+<section class="specialOffers MC">
+    <h1 class="MC">Special Offers</h1>
+    <section class="specialoffer1 LeftImage MC">
+        <img src="offer.jpg" alt="offer" width="100" class="MC">
+        <section class="specialOfferDesc MC">
+            <h2 class="MC">Children Half Price</h2>
+            <p class="MC">All tickets for children under 16 are 50%.  Bring the family and save money.</p>
+        </section>
+    </section>
+    <section class="specialoffer2 RightImage MC">
+        <img src="offer.jpg" alt="offer" width="100" class="MC">
+        <section class="specialOfferDesc MC">
+            <h2 class="MC">Small Children Free</h2>
+           <p class="MC">Tickets for children under 90cm in height are free.</p>
+        </section>
+    </section>    
+    <section class="specialoffer3 LeftImage MC">
+        <img src="offer.jpg" alt="offer" width="100" class="MC">
+        <section class="specialOfferDesc MC">
+            <h2 class="MC">Buy early to save time</h2>
+            <p>Buy online and get your tickets as e-Tickets.  Skip the queue to buy tickets at the park.</p>
+        </section>
+    </section>    
+    <section class="specialoffer4 RightImage MC">
+        <img src="offer.jpg" alt="offer" width="100" class="MC">
+        <section class="specialOfferDesc MC">
+            <h2 class="MC">Discount available in out Hotel</h2>
+            <p class="MC">Book a stay at our hotel when you buy your tickets and save 20% on each.</p>
+        </section>    
+    </section>
+</section>
+<!--We know this form needs Js or similar to work, but it shows additional HTML skils-->
+<section class="buyHere MC" id="buyHere">
+    <form class="MC">
+        <label for="adults" class="MC">Adults: </label>
+        <input type="number" id="adults" name="adults" class="MC">
+        
+        <label for="children" class="MC">Children: </label>
+        <input type="number" id="children" name="children" class="MC">
+        
+        <label for="ticketTypeBuy" class="MC">Ticket Type:</label>
+        <select name="ticketTypeBuy" id="ticketTypeBuy" class="MC">
+            <option value="DayTicket" class="MC">Day Ticket</option>
+            <option value="Annual Pass" class="MC">Annual Pass</option>
+            <option value="ReadingCorner" class="MC">Reading Corner Ticket</option>
+        </select>
+        
+        <label for="date" class="MC">Date of Visit:</label>
+        <input type="date" id="date" name="date" class="MC">
+        
+        <input type="submit" class="MC">
+    </form>
+</section>
