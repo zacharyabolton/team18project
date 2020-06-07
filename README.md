@@ -20,3 +20,7 @@
 Zac Bolton
 Melissa Coates
 Febin John James
+Anna Severn
+Petra Galler
+
+(Absentee member: Hannes)
