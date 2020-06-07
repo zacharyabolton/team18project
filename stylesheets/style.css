@@ -14,10 +14,17 @@ body {
 
 h1 {
     color:#FFFFFF;
+    font-family: 'Cinzel', Cinzel, 'Times New Roman', Times, serif;
     font-weight: 600;
     line-height: 1.3;
 }
 
+h2 {
+    color:#FFFFFF;
+    font-family:"Poppins", Poppins, 'Arial Narrow', Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    line-height: 1.3;
+}
 
 
 /* 
