@@ -1,1 +1,31 @@
-hello! testing
+
+
+body {
+    background:#0075A2;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.06);
+    color: #5EA4BF;
+    font-family:"Poppins", Poppins, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 2em 2em 4em;
+}
+
+h1 {
+    color:#FFFFFF;
+    font-weight: 600;
+    line-height: 1.3;
+}
+
+
+
+/* 
+p.index {color: }
+
+p.tickets {color:}
+
+p.explore {color:;}
+
+p.menu {color:}
+*/
