@@ -1,4 +1,5 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@700&display=swap');
 
 body {
     background:#0075A2;
@@ -26,7 +27,6 @@ h2 {
     line-height: 1.3;
 }
 
-
 /* 
 p.index {color: }
 
@@ -36,3 +36,32 @@ p.explore {color:;}
 
 p.menu {color:}
 */
+
+
+/*=======================================*/
+/*========== Index page styles ==========*/
+/*=======================================*/
+
+.pink {
+    background-color: #FF0064;
+}
+
+.dark-blue {
+    background-color: #0075A2;
+}
+
+.light-blue {
+    background-color: #5EA4BF;
+}
+
+.purple {
+    background-color: #7111B4;
+}
+
+.poppins {
+    font-family: 'Poppins', sans-serif;
+}
+
+.cinzel {
+    font-family: 'Cinzel', serif;
+}
