@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@700&display=swap');
 
+/* default background styles */
 body {
     background:#0075A2;
     box-shadow: 0 0 2px rgba(0, 0, 0, 0.06);
@@ -13,11 +14,13 @@ body {
     padding: 2em 2em 4em;
 }
 
+/* title styles */
 title {
     color: #5EA4BF;
     background-color: #7111B4;
 }
 
+/*h1 styles */
 h1 {
     color:#FFFFFF;
     background-color:#5EA4BF;
@@ -25,13 +28,14 @@ h1 {
     font-weight: 600;
     line-height: 1.3;
 }
-
+/* h1 styles for first letter */
 h1::first-letter {
     font-size: 200%;
     color: rgb(243, 61, 91);
     background-color:#5EA4BF;
 }
 
+/* h2 styles */
 h2 {
     color:#FFFFFF;
     font-family:"Poppins", Poppins, 'Arial Narrow', Arial, Helvetica, sans-serif;
@@ -39,6 +43,9 @@ h2 {
     line-height: 1.3;
     background-color: #FF0064;
 }
+
+/* h3 styles */
+
 h3 {
     color:#FFFFFF;
     font-family:"Poppins", Poppins, 'Arial Narrow', Arial, Helvetica, sans-serif;
@@ -46,6 +53,8 @@ h3 {
     line-height: 1.3;
     background-color: #FF0064;
 }
+
+/* aside - covid message styling */
 aside {
     color:#FF0064;
     font-family:"Poppins", Poppins, 'Arial Narrow', Arial, Helvetica, sans-serif;
@@ -54,7 +63,7 @@ aside {
     background-color: #5EA4BF;
 }
 
-
+/* paragraph styling */
 p {
     color:#FFFFFF;
     background-color: #7111B4;
