@@ -111,3 +111,16 @@ p.menu {color:}
 /*=======================================*/
 /*======== END Index page styles ========*/
 /*=======================================*/
+
+
+/*Ticket Page styles*/
+.tp a {
+    color:#FFFFFF;
+    font-family:"Poppins", Poppins, 'Arial Narrow', Arial, Helvetica, sans-serif;
+
+}
+
+.tp input[type = submit] {
+    background-color: #FF0064;
+    color:#FFFFFF;
+}
