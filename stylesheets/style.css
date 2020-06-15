@@ -108,6 +108,57 @@ p.menu {color:}
     font-family: 'Cinzel', serif;
 }
 
+.hoMainTitle {
+    font-family: 'Cinzel', serif;
+    background-color: transparent;
+}
+
+.hoMainTitle::first-letter {
+    background-color: transparent;
+}
+
+.hoMainBlurb {
+    font-family: 'Poppins', sans-serif;
+    background-color: transparent;
+}
+
+.hoMainCTA {
+    font-family: 'Poppins', sans-serif;
+    background-color: #FF0064;
+    color: white;
+}
+
+.hoAlert {
+    color: white;
+}
+
+.hoAlertMore {
+    color: #5EA4BF;
+    background-color: white;
+}
+
+.hoPopRideTitle {
+    font-family: 'Cinzel', serif;
+    background-color: transparent;
+}
+
+.hoPopRideBlurb {
+    font-family: 'Poppins', sans-serif;
+    background-color: transparent;
+}
+
+.hoPopRideCTA {
+    font-family: 'Poppins', sans-serif;
+    background-color: #7111B4;
+    color: white;
+}
+
+.hoOffer, .hoOfferTitle {
+    font-family: 'Poppins', sans-serif;
+    background-color: white;
+    color: black;
+}
+
 /*=======================================*/
 /*======== END Index page styles ========*/
 /*=======================================*/
