@@ -181,6 +181,7 @@ p.menu {color:}
     color:#FFFFFF;
 }
 
+
 /*=========================================*/
 /*==== START EXPLORE [ex*] page styles ====*/
 /*=========================================*/
@@ -188,6 +189,8 @@ p.menu {color:}
 /* trying out css selectors, apologies if you suddenly have unexplained styling. 
 It's maybe more risky than defining each class and applying a style to it, but it 
 might help to show we have a good understanding of course content (certainly it's helping me at any rate!) - A */
+
+/*
 [class*="ex"] 
 :not(h3) :not(h4)
  {
@@ -207,10 +210,12 @@ main.ex h4 {
     background-color: hotpink;
 }
 
-
+*/
 /*=========================================*/
 /*== END EXPLORE [ex*] class page styles ==*/
 /*=========================================*/
+
+
 
 /* trying out some colors for links - have to be slightly different from the 
 main colour scheme so that they contrast in all situations, 
