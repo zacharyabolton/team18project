@@ -45,7 +45,6 @@ h2 {
 }
 
 /* h3 styles */
-
 h3 {
     color:#FFFFFF;
     font-family:"Poppins", Poppins, 'Arial Narrow', Arial, Helvetica, sans-serif;
@@ -181,3 +180,53 @@ p.menu {color:}
     background-color: #7111B4;
     color:#FFFFFF;
 }
+
+/*=========================================*/
+/*==== START EXPLORE [ex*] page styles ====*/
+/*=========================================*/
+
+/* trying out css selectors, apologies if you suddenly have unexplained styling. 
+It's maybe more risky than defining each class and applying a style to it, but it 
+might help to show we have a good understanding of course content (certainly it's helping me at any rate!) - A */
+[class*="ex"] 
+:not(h3) :not(h4)
+ {
+    background-color: #7111B4;
+    color: rgb(43, 255, 0);
+
+}
+.main
+{
+    background-color: coral;
+}
+main.ex h3 {
+    background-color: greenyellow;
+}
+
+main.ex h4 {
+    background-color: hotpink;
+}
+
+
+/*=========================================*/
+/*== END EXPLORE [ex*] class page styles ==*/
+/*=========================================*/
+
+/* trying out some colors for links - have to be slightly different from the 
+main colour scheme so that they contrast in all situations, 
+just picked some random slightly lighter/darker versions to keep in style - A */
+::selection {
+    background-color: #FFFFFF;
+}
+a:visited {
+    color: #420270
+}
+a:link {
+    color: #FFFFFF;
+}
+
+a:hover {
+    color: #7bdaff;
+}
+
+
