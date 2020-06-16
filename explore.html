@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
+
+<!-- HTML Explore Page elements coded by Anna, Header Navigation & Footer html coded by Petra, Images sourced by Anna & Melissa -->
 <head>
     <!-- this section contains metacontent which is not visible on the website -->
   
@@ -55,35 +57,35 @@
 
 
 
-            <div class="hero-image">
-                <div class="hero-text">
-                  <p class="important">Adventure is out here!</p>
+            <div class="exHero-image">
+                <div class="exHero-text">
+                  <p class="exImportant">Adventure is out here!</p>
 
                   
                 
                          <!-- Quicklinks/sub nav menu -->
             
-                <a href="explore.html#Attractions" class="AB">Attractions</a>
-                <a href="explore.html#Events" class="AB">Events</a>
-                <a href="explore.html#Facilities" class="AB">Facilities</a>
-                <a href="explore.html#Directions" class="AB">Directions</a>
-                <a href="tickets.html#buyHere" class="MC">Tickets</a>
+                <a href="explore.html#Attractions" class="ex">Attractions</a>
+                <a href="explore.html#Events" class="ex">Events</a>
+                <a href="explore.html#Facilities" class="ex">Facilities</a>
+                <a href="explore.html#Directions" class="ex">Directions</a>
+                <a href="tickets.html#buyHere" class="ex">Tickets</a>
         
             </div>
             </div>
 
 
         
-        <main>
+        <main class="ex">
 
 <!--  section displaaying attractions and events - the main part of the explore page-->
-            <section class="attractionsAndEvents">
+            <section class="ex exAttractionsAndEvents">
             <div class="exploreAttractions" id="Attractions">
               <a id="exploreAttractions"></a>
               <!-- section specifically advertising attractions at the park-->
-                <div class='exploreNewAttractions' id="newAttractions">
-                <h2>Rides and Attractions</h2>
-                <h3>New at the park</h3>
+
+                <h2 class="exMainDisplay">Rides and Attractions</h2>
+                <h3 class="exRideDisplay">New at the park</h3>
                 <ul>
                     <li>
                         <img src="images/derek-thomson-vY86Rq8cfjQ-unsplash.jpg" alt="New Attraction - Swim park" width="300" class="exploreImageCat">
@@ -102,10 +104,7 @@
                
                     </li>
                 </ul>
-                </div>
-
-                <div class="exploreClassicAttractions" id="classicAttractions">
-                    <h3>The Classics</h3>
+                    <h3 class="exRideDisplay">The Classics</h3>
                 <ul>
                     
                         <li><h4>Chekhov's Gun</h4><img src="images/MelissaMumArchery.JPG" alt="Attraction - Archery" width="300" class="exploreImageCat"></li> 
@@ -119,7 +118,7 @@
             
             <!-- section for events happening at the park -->
             <div class="exploreEvents" id="Events">
-                <h2>Upcoming Events</h2>
+                <h2 class="exMainDisplay">Upcoming Events</h2>
                 <p>Events you won't want to miss</p>
 
                 <ol>
@@ -133,10 +132,10 @@
 
         </section>
 <!-- end of attractions and events section-->
-        <section>           
+        <section class="exFacilities&Directions">           
             
             <!-- additional section for facilities at, and directions to the park -->
-            <div class="exploreFacilities" id="Facilities">
+            <div class="exFacilities" id="Facilities">
                 <h2>Facilities at the park</h2>
                 <p>Our world class sensory space is located just to the left of the main entrance and is well sign-posted from any direction in the park.</p>
                 <p>For accessibility arrangements please contact our office on (087-real-phone-number) and we will be happy to make accommodations for guests with further needs.</p>
@@ -144,21 +143,21 @@
                 <p>ATMs available at all stores and food services, at the entrance to the park and by the main office.</p>
             </div>
 
-            <div class="exploreDirections" id="Directions">
+            <div class="exDirections" id="Directions">
                 <h2>Getting here, and where to stay</h2>
                 <h3>Location</h3>
                 <p>Just past the turn at the end of the fork, on your way over and not before the old road. Take the m6 from the city and follow the flags</p>
                 <img src="images/wls_mlbn-tMqtFzyXiN4-unsplash.jpg" alt="Directions to the park" width="300" class="exploreImageCat">
                 <p class="important"> See our latest offers on Hotels on our <span> <a href="tickets.html/buyHere" class="MC">Tickets Page</a></span></p>
 
-                <!-- map of the park - A:figure out hotspot links-->
-               <div id="exploreImageMap">
-                 <img src="images\thomas-kinto-6MsMKWzJWKc-unsplash.jpg" alt="Map to Storyland Park" width="750" height="422" usemap="#directionsMap">
-                 <map name="directionsMap">
-                   <area class="map1" shape="circle" coords="375,211,20" alt="Storyland Attractions Link"
-                   href=#exploreAttractions>
-                 </map>
-               </div>
+                 <!-- map of the park - Clicking on 'Storyland' brings you up to the #Attractions page at the moment, need to figure out something better though - hover menu??-->
+               <div class="exDirectionsMap" id="exploreImageMap">
+                <img src="images\exploreMap.png" alt="Map to Storyland Park" width="750" height="422" usemap="#directionsMap">
+                <map name="directionsMap">
+                  <area class="exploreMap" shape="circle" coords="375,211,20" alt="Storyland Attractions Link"
+                  href="explore.html#Attractions">
+                </map>
+              </div>
             </div>
         </section>
   
@@ -169,7 +168,7 @@
 
         </main>
 
-        <aside>
+        <aside class="ex twitter">
 
                        <!-- A:figuring out how to embed tweets -->
            <h3>Testimonials</h3>
@@ -177,7 +176,7 @@
            <h4>Get in touch on twitter <span><a href="https://twitter.com/BirdPerHour" target="_blank" class="AB">@BirdPerHour</a></span></h4>
 
            <p>Fan photos at the park:</p>
-            
+            <!-- code in class="twitter-tweet" from twitter publishing - https://publish.twitter.com/# -->
                 <blockquote class="twitter-tweet">
                 <p lang="und" dir="ltr"><a href="https://t.co/bMjffg1Asx">pic.twitter.com/bMjffg1Asx</a>&mdash; Raccoon Every Hour (@RaccoonEveryHr) </p>
                 <a href="https://twitter.com/RaccoonEveryHr/status/1264692750706003968?ref_src=twsrc%5Etfw">May 24, 2020</a>
