@@ -113,7 +113,31 @@ p.menu {color:}
     font-family: 'Cinzel', serif;
 }
 
+/* General home page styles */
+.hoButton {
+    padding: 1rem 1.5rem;
+    border-radius: 0.5rem;
+}
+
+/* END General home page styles */
+
+/* Styles for the main hero image content */
+.hoMain {
+    position: relative;
+    margin-bottom: 0rem;
+}
+
+.hoMain .hoContent {
+    position: absolute;
+    left: 10%;
+}
+
+.hoMain img{
+    width: 100%;
+}
+
 .hoMainTitle {
+    top: 5rem;
     font-family: 'Cinzel', serif;
     background-color: transparent;
 }
@@ -123,36 +147,94 @@ p.menu {color:}
 }
 
 .hoMainBlurb {
+    top: 10rem;
+    max-width: 80%;
     font-family: 'Poppins', sans-serif;
     background-color: transparent;
+    text-shadow: 0rem 0rem 0.3rem black;
+    
 }
 
 .hoMainCTA {
+    bottom: 3rem;
     font-family: 'Poppins', sans-serif;
     background-color: #FF0064;
     color: white;
 }
 
+/* END Styles for the main hero image content */
+
+/* Styles for the COVID-19 message */
+
 .hoAlert {
+    position: relative;
+}
+
+.hoAlert div {
+    width: 75%;
+    font-weight: normal;
     color: white;
+    padding: 0.5rem 1rem;
+    margin-top: -0.5rem;
+    font-size: 0.7rem;
+}
+
+.hoAlert h4 {
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 0.4rem;
 }
 
 .hoAlertMore {
+    position: absolute;
+    top: 1.5rem;
+    right: 1rem;
+    display: inline;
     color: #5EA4BF;
     background-color: white;
 }
 
+/* END Styles for the COVID-19 message */
+
+/* Styles for the popular rides sections */
+
+.hoPopRide {
+    margin: 0rem;
+    position: relative;
+    margin-top: -0.5rem;
+}
+
+.hoPopRide img {
+    width: 100%;
+}
+
+.hoPopRide .hoContent {
+    position: absolute;
+}
+
+.hoPopRide .hoContent.left {
+    left: 10%;
+}
+
+.hoPopRide .hoContent.right {
+    right: 10%;
+}
+
 .hoPopRideTitle {
+    top: 1rem;
     font-family: 'Cinzel', serif;
     background-color: transparent;
 }
 
 .hoPopRideBlurb {
+    top: 5rem;
     font-family: 'Poppins', sans-serif;
     background-color: transparent;
+    width: 40%;
 }
 
 .hoPopRideCTA {
+    bottom: 2rem;
     font-family: 'Poppins', sans-serif;
     background-color: #7111B4;
     color: white;
@@ -163,6 +245,45 @@ p.menu {color:}
     background-color: white;
     color: black;
 }
+
+.hoPopRideTitle.hoContent.right {
+    right: 14rem;
+}
+
+.hoPopRideCTA.hoButton.hoContent.right {
+    right: 16rem;
+}
+
+/* END Styles for the popular rides sections */
+
+/* Styles for the offers sections */
+
+.hoOffer {
+    width: 30%;
+    z-index: 100;
+    position: absolute;
+    transform: translate(0rem, -7rem);
+    text-align: center;
+    padding: 1rem 1rem 2rem 1rem;
+    height: 13rem;
+    border-radius: 1rem;
+}
+
+.hoOffer.right {
+    right: 6rem;
+}
+
+.hoOffer.left {
+    left: 6rem;
+}
+
+.hoOfferButton {
+    position: absolute;
+    bottom: 1rem;
+    right: 4rem;
+}
+
+/* END Styles for the offers sections */
 
 /*=======================================*/
 /*======== END Index page styles ========*/
