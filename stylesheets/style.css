@@ -119,6 +119,10 @@ p.menu {color:}
     border-radius: 0.5rem;
 }
 
+main {
+    position: relative;
+}
+
 /* END General home page styles */
 
 /* Styles for the main hero image content */
@@ -260,6 +264,7 @@ p.menu {color:}
 
 .hoOffer {
     width: 30%;
+    max-width: 270px;
     z-index: 100;
     position: absolute;
     transform: translate(0rem, -7rem);
@@ -270,17 +275,17 @@ p.menu {color:}
 }
 
 .hoOffer.right {
-    right: 6rem;
+    right: 2rem;
 }
 
 .hoOffer.left {
-    left: 6rem;
+    left: 2rem;
 }
 
 .hoOfferButton {
     position: absolute;
     bottom: 1rem;
-    right: 4rem;
+    right: 3rem;
 }
 
 /* END Styles for the offers sections */
