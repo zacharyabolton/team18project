@@ -4,14 +4,19 @@
 /* default background styles */
 body {
     background:#0075A2;
-    box-shadow: 0 0 2px rgba(0, 0, 0, 0.06);
     color: #FFF;
     font-family:"Poppins", Poppins, Arial, sans-serif;
     font-size: 16px;
-    line-height: 1.5;
     margin: 0 auto;
+}
+
+/* default main styles */
+main {
+    font-size: 16px;
     max-width: 800px;
-    padding: 2rem 2rem 4rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0rem auto;
 }
 
 /* title styles */
