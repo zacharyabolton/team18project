@@ -11,7 +11,7 @@ body {
     line-height: 1.5;
     margin: 0 auto;
     max-width: 800px;
-    padding: 2em 2em 4em;
+    padding: 2rem 2rem 4rem;
 }
 
 /* title styles */
@@ -84,6 +84,19 @@ p.explore {color:;}
 p.menu {color:}
 */
 
+
+/*=======================================*/
+/*============ Navbar styles ============*/
+/*=======================================*/
+
+.info-bar {
+    width: 100vw;
+    background-color: #FF0064;
+}
+
+/*=======================================*/
+/*======== END Navbar styles ============*/
+/*=======================================*/
 
 /*=======================================*/
 /*========== Index page styles ==========*/
