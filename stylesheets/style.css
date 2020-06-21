@@ -295,7 +295,10 @@ main {
 /*=======================================*/
 
 
-/*Ticket Page styles*/
+/*===================================*/
+/*==== START TICKETS page styles ====*/
+/*===================================*/
+
 .tp a {
     color:#FFFFFF;
     font-family:"Poppins", Poppins, 'Arial Narrow', Arial, Helvetica, sans-serif;
@@ -306,6 +309,20 @@ main {
     background-color: #7111B4;
     color:#FFFFFF;
 }
+
+
+
+.tType img {
+    width : 100px;
+}
+
+.SpecOff img {
+    width : 100px;
+}
+
+/*=================================*/
+/*==== END TICKETS page styles ====*/
+/*=================================*/
 
 
 /*=========================================*/
