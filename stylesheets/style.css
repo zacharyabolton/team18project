@@ -299,23 +299,59 @@ main {
 /*==== START TICKETS page styles ====*/
 /*===================================*/
 
+/*Links within tp class (on Ticket Page)*/
 .tp a {
     color:#FFFFFF;
     font-family:"Poppins", Poppins, 'Arial Narrow', Arial, Helvetica, sans-serif;
 
 }
 
+/*Submit input within tp class (on Ticket Page)*/
 .tp input[type = submit] {
     background-color: #7111B4;
     color:#FFFFFF;
 }
 
-
-
-.tType img {
-    width : 100px;
+/*ticketTypes class (the container for all ticket type divs)*/
+.ticketTypes {
+    display: grid;
+    grid-template-areas: 
+        'header header header'
+        'tType tType tType';
+    
 }
 
+.ticketTypes h1 {
+    grid-area: header;
+}
+
+/*divs with tType class (ticket type)*/
+.tType {
+    grid-area: header;
+    grid-template-columns: auto auto auto;
+    width : 30%;
+    float : left;
+    border: 5px solid white; 
+    margin : auto;
+}
+
+/*class of cost*/
+.cost {
+    text-align: center;
+    font-size: 2rem;
+}
+
+/*Images within tType class (Ticket type images)*/
+.tType img {
+    width : 100%;
+    max-width : 300px;
+}
+
+.SpecOff {
+    width : 100%;
+}
+
+/*Images within SpecOffer class (Special Offer Images)*/
 .SpecOff img {
     width : 100px;
 }
