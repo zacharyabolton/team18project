@@ -89,7 +89,75 @@ p.explore {color:;}
 p.menu {color:}
 */
 
+/*=======================================*/
+/*============ Navbar styles ============*/
+/*=======================================*/
 
+.info-bar {
+    width: 100%;
+    background-color: #FF0064;
+    height: 2rem;
+    text-align: center;
+    position: fixed;
+    z-index: 5000;
+}
+
+.info-bar h3 {
+    background-color: transparent;
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+    line-height: 2rem;
+}
+
+.info-bar h3 img {
+    margin-top: 6px;
+}
+
+.nav-bar {
+    position: fixed;
+    width: 100%;
+    height: 3rem;
+    margin-top: 2rem;
+    /* position: relative; */
+    /* margin-top: -1rem; */
+    box-shadow: 0rem 0.2rem 1rem black;
+    z-index: 5000;
+    background-color: #0075A2;
+}
+
+.nav-bar header {
+    top: -2rem;
+    left: 1rem;
+    position: absolute;
+    z-index: 1000;
+}
+
+.nav-bar ul {
+    list-style: none;
+    padding-right: 25%;
+    margin-top: 0rem;
+}
+
+.nav-bar ul li {
+    text-align: center;
+    float: right;
+    width: 9rem;
+}
+
+.nav-bar ul li a {
+    color: white;
+    text-decoration: none;
+    line-height: 3rem;
+}
+
+.nav-bar ul li.active, .nav-bar ul li.active a {
+    background-color: white;
+    color: #0075A2 !important;
+}
+
+/*=======================================*/
+/*========== END Navbar styles ==========*/
+/*=======================================*/
 
 /*=======================================*/
 /*========== Index page styles ==========*/
@@ -127,6 +195,7 @@ p.menu {color:}
 
 main {
     position: relative;
+    padding-top: 5rem;
 }
 
 /* END General home page styles */
