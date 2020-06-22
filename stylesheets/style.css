@@ -162,6 +162,83 @@ p.menu {color:}
 /*=======================================*/
 
 /*=======================================*/
+/*============ Footer styles ============*/
+/*=======================================*/
+
+.social-links {
+    text-align: center;
+}
+
+.social-links a {
+    text-decoration: none;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+.sitemap {
+    background-color: white;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.sitemap div {
+    display: inline-block;
+    text-align: center;
+    width: 33%;
+}
+
+.sitemap div ul {
+    padding: 0rem;
+    width: 100%;
+}
+
+.sitemap div ul li a {
+    color: black;
+    text-decoration: none;
+}
+
+.sitemap div ul li a:hover {
+    color: blue;
+    text-decoration: underline;
+}
+
+.service-menu {
+    text-align: center;
+}
+
+.service-menu ul {
+    padding: 0rem;
+    text-align: center;
+    margin-top: -1rem;
+    background-color: #5EA4BF;
+    height: 3rem;
+}
+
+.service-menu ul li {
+    width: 10rem;
+    display: inline-block;
+    line-height: 3rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.service-menu ul li a {
+    text-decoration: none;
+}
+
+.service-menu p {
+    color: black;
+    background-color: white;
+    margin-top: -1rem;
+    height: 2rem;
+    line-height: 2rem;
+}
+
+/*=======================================*/
+/*========== END Footer styles ==========*/
+/*=======================================*/
+
+/*=======================================*/
 /*========== Index page styles ==========*/
 /*=======================================*/
 
@@ -198,6 +275,10 @@ p.menu {color:}
 .hoButton:hover {
     padding: 1.2rem 1.8rem;
     box-shadow: 0rem 0.2rem 1rem black;
+}
+
+body {
+    margin-bottom: -1rem;
 }
 
 main {
