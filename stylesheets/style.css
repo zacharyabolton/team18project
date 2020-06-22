@@ -425,8 +425,7 @@ div.tType {
     vertical-align: top;
     padding : 0px 0.5rem 0.5rem;
 /*    float : left;*/
-    display: flex;
-  justify-content: center;
+
 }
 
 /*class of cost*/
@@ -445,11 +444,26 @@ div.tType {
 
 .SpecOff {
     width : 100%;
+    display : block;
+}
+
+.lImg, .rImg {
+    width : 25%;
+    height: 25%;
 }
 
 /*Images within SpecOffer class (Special Offer Images)*/
 .SpecOff img {
-    width : 100px;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.lImg {
+    float : left;
+}
+
+.rImg {
+    float : right;
 }
 
 /*=================================*/
