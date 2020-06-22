@@ -445,11 +445,16 @@ div.tType {
 .SpecOff {
     width : 100%;
     display : block;
+    border: 8px solid #7111B4;
+    background-color: #5EA4BF;
+    margin : 1rem auto;
+    padding : 0px 1rem;
 }
 
 .lImg, .rImg {
     width : 25%;
-    height: 25%;
+    height: 100px;
+    margin : 1em;
 }
 
 /*Images within SpecOffer class (Special Offer Images)*/
