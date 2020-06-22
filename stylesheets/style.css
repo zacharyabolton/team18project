@@ -396,34 +396,51 @@ main {
         'tType tType tType';
     
 */
+/*        justify-content: center;*/
+
 }
 
-.ticketTypes h1 {
-/*    grid-area: tTypeHead;*/
+/*h1 tags with a tp class*/
+h1.tp {
+    display: block;
+    width : 100%;
+    text-align: center;
+    padding : 0.5rem;
+    font-size: 1.5rem;
 }
 
 /*divs with tType class (ticket type)*/
-.tType {
+div.tType {
 /*
     grid-area: ttype;
+*/
+/*
     grid-template-columns: auto auto auto;
+    display : grid;
 */
     width : 30%;
-    float : left;
-    border: 5px solid white; 
+    border: 2% solid white; 
     margin : auto;
+    display: inline-block;
+    vertical-align: top;
+    padding : 0px 0.5rem 0.5rem;
+/*    float : left;*/
+    display: flex;
+  justify-content: center;
 }
 
 /*class of cost*/
 .cost {
     text-align: center;
     font-size: 2rem;
+    margin : 0px;
 }
 
 /*Images within tType class (Ticket type images)*/
 .tType img {
     width : 100%;
-    max-width : 450px;
+    max-width : 350px;
+    
 }
 
 .SpecOff {
