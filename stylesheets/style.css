@@ -389,21 +389,25 @@ main {
 
 /*ticketTypes class (the container for all ticket type divs)*/
 .ticketTypes {
+/*
     display: grid;
     grid-template-areas: 
-        'header header header'
+        'tTypeHead tTypeHead tTypeHead'
         'tType tType tType';
     
+*/
 }
 
 .ticketTypes h1 {
-    grid-area: header;
+/*    grid-area: tTypeHead;*/
 }
 
 /*divs with tType class (ticket type)*/
 .tType {
-    grid-area: header;
+/*
+    grid-area: ttype;
     grid-template-columns: auto auto auto;
+*/
     width : 30%;
     float : left;
     border: 5px solid white; 
@@ -419,7 +423,7 @@ main {
 /*Images within tType class (Ticket type images)*/
 .tType img {
     width : 100%;
-    max-width : 300px;
+    max-width : 450px;
 }
 
 .SpecOff {
