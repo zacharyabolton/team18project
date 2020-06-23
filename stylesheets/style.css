@@ -473,17 +473,27 @@ p.menu {color:}
     color:#FFFFFF;
 }
 
+/*ticket type divs and h1 classes for grid layout*/
+.ticketType1 {
+    grid-area: tType1;   
+}
+.ticketType2 {
+    grid-area: tType2;
+}
+.ticketType3 {
+    grid-area: tType3;
+}
+.ticketTypes h1 {
+    grid-area: tTypeHead;
+}
+
 /*ticketTypes class (the container for all ticket type divs)*/
 .ticketTypes {
-/*
     display: grid;
     grid-template-areas: 
         'tTypeHead tTypeHead tTypeHead'
-        'tType tType tType';
-    
-*/
-/*        justify-content: center;*/
-
+        'tType1 tType2 tType3';
+    grid-gap: 0px:
 }
 
 /*h1 tags with a tp class*/
@@ -497,21 +507,11 @@ h1.tp {
 
 /*divs with tType class (ticket type)*/
 div.tType {
-/*
-    grid-area: ttype;
-*/
-/*
-    grid-template-columns: auto auto auto;
-    display : grid;
-*/
-    width : 30%;
-    border: 2% solid white; 
-    margin : auto;
-    display: inline-block;
+    width : 96%;
+    border: 2px solid white; 
+    margin : 0px auto;
     vertical-align: top;
-    padding : 0px 0.5rem 0.5rem;
-/*    float : left;*/
-
+    padding : 0px 2% 2%;
 }
 
 /*class of cost*/
