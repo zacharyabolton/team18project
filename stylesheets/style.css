@@ -111,6 +111,7 @@ p.menu {color:}
 }
 
 .info-bar h3 img {
+    width: 20px;
     margin-top: 6px;
 }
 
@@ -129,6 +130,10 @@ p.menu {color:}
     left: 1rem;
     position: absolute;
     z-index: 1000;
+}
+
+.nav-bar header object {
+    width: 220px;
 }
 
 .nav-bar ul {
@@ -151,12 +156,52 @@ p.menu {color:}
     color: white;
     text-decoration: none;
     line-height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .nav-bar ul li.active, .nav-bar ul li.active a {
     background-color: white;
     color: #0075A2 !important;
 }
+
+@media only screen and (max-width: 800px) {
+    .info-bar {
+        text-align: right;
+    }
+    
+    .info-bar h3 {
+        font-size: 1rem;
+    }
+
+    .info-bar h3 img {
+        width: 1rem;
+    }
+
+    .nav-bar header object {
+        width: 10rem;
+    }
+
+    .nav-bar ul {
+        padding-right: 0rem;
+    }
+    
+    .nav-bar ul li {
+        width: 5rem;
+    }
+
+    .nav-bar ul li a {
+        font-size: 1rem;
+    }
+    
+    .nav-bar ul li.active, .nav-bar ul li.active a {
+        background-color: white;
+        color: #0075A2 !important;
+    }
+}
+
+
 
 /*=======================================*/
 /*========== END Navbar styles ==========*/
@@ -235,6 +280,12 @@ p.menu {color:}
     line-height: 2rem;
 }
 
+@media only screen and (max-width: 800px) {
+    .sitemap div {
+        width: 32.8%;
+    }
+}
+
 /*=======================================*/
 /*========== END Footer styles ==========*/
 /*=======================================*/
@@ -242,30 +293,6 @@ p.menu {color:}
 /*=======================================*/
 /*========== Index page styles ==========*/
 /*=======================================*/
-
-.pink {
-    background-color: #FF0064;
-}
-
-.dark-blue {
-    background-color: #0075A2;
-}
-
-.light-blue {
-    background-color: #5EA4BF;
-}
-
-.purple {
-    background-color: #7111B4;
-}
-
-.poppins {
-    font-family: 'Poppins', sans-serif;
-}
-
-.cinzel {
-    font-family: 'Cinzel', serif;
-}
 
 /* General home page styles */
 .hoButton {
@@ -276,6 +303,16 @@ p.menu {color:}
 .hoButton:hover {
     padding: 1.2rem 1.8rem;
     box-shadow: 0rem 0.2rem 1rem black;
+}
+
+@media only screen and (max-width: 800px) {
+    .hoButton {
+        padding: 0.5rem 0.7rem;
+    }
+
+    .hoButton:hover {
+        padding: 0.6rem 0.84rem;
+    }
 }
 
 /* END General home page styles */
@@ -319,6 +356,15 @@ p.menu {color:}
     font-family: 'Poppins', sans-serif;
     background-color: #FF0064;
     color: white;
+}
+
+@media only screen and (max-width: 800px) {
+    .hoMainBlurb {
+        position: absolute;
+        text-align: right;
+        width: 40%;
+        right: 1rem;
+    }
 }
 
 /* END Styles for the main hero image content */
