@@ -487,13 +487,20 @@ p.menu {color:}
     grid-area: tTypeHead;
 }
 
+a.BuyNow {
+    text-align : center;
+    width : 100%;
+    display : block;
+    margin : 0px auto;
+}
+
 /*ticketTypes class (the container for all ticket type divs)*/
 .ticketTypes {
     display: grid;
     grid-template-areas: 
         'tTypeHead tTypeHead tTypeHead'
         'tType1 tType2 tType3';
-    grid-gap: 0px:
+    grid-column-gap: 20px;
 }
 
 /*h1 tags with a tp class*/
@@ -510,17 +517,15 @@ div.tType {
     width : 96%;
     border: 2px solid white; 
     margin : 0px calc(4% - 4px);
-/*    vertical-align: top;*/
     padding : 0px 2% 2%;
 }
 
 /*class of cost*/
-.cost {
+.cost p {
     text-align: center;
     font-size: 2rem;
-    margin : 0px !important;
-    margin-block-start: 0px;
-    margin-block-end: 0px;
+    margin : 0.5rem;
+    background-color: #7111B4;
 }
 
 /*Images within tType class (Ticket type images)*/
@@ -603,10 +608,12 @@ main.ex h4 {
 main colour scheme so that they contrast in all situations, 
 just picked some random slightly lighter/darker versions to keep in style - A */
 ::selection {
-    background-color: #FFFFFF;
+    background-color: #FFFFFF;  
 }
+
+/*Commented out for now as it affect the look in tickets page - we can discuss on Sunday*/
 a:visited {
-    color: #420270
+/*    color: #420270;*/
 }
 a:link {
     color: #FFFFFF;
