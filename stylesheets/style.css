@@ -600,7 +600,7 @@ main.ex h4 {
 /* trying out some colors for links - have to be slightly different from the 
 main colour scheme so that they contrast in all situations, 
 just picked some random slightly lighter/darker versions to keep in style - A */
-/* ::selection {
+::selection {
     background-color: #FFFFFF;
 }
 a:visited {
@@ -612,6 +612,6 @@ a:link {
 
 a:hover {
     color: #7bdaff;
-} */
+}
 
 
