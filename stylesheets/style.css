@@ -509,8 +509,8 @@ h1.tp {
 div.tType {
     width : 96%;
     border: 2px solid white; 
-    margin : 0px auto;
-    vertical-align: top;
+    margin : 0px calc(4% - 4px);
+/*    vertical-align: top;*/
     padding : 0px 2% 2%;
 }
 
@@ -518,7 +518,9 @@ div.tType {
 .cost {
     text-align: center;
     font-size: 2rem;
-    margin : 0px;
+    margin : 0px !important;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
 }
 
 /*Images within tType class (Ticket type images)*/
