@@ -639,11 +639,69 @@ div.tType {
 /*--------------------------*/
 
 
+/*----------------------*/
+/*Buy Now Area Start CSS*/
+
+/*form areas for grid positioning*/
+form.tp label[for = adults] {
+    grid-area: adultsL;
+    text-align: right;
+}
+form.tp input[id = adults] {
+    grid-area: adultsI;
+}
+form.tp label[for = children] {
+    grid-area: kidsL;
+    text-align: right;
+}
+form.tp input[id = children] {
+    grid-area: kidsI;
+}
+form.tp label[for = ticketTypeBuy] {
+    grid-area: TTypeBuyL;
+    text-align: right;
+}
+form.tp input[id = ticketTypeBuy] {
+    grid-area: TTypeBuyI;
+}
+form.tp label[for = date] {
+    grid-area: dateL;
+    text-align: right;
+}
+form.tp input[id = date] {
+    grid-area: dateI;
+}
+form.tp input[type = submit] {
+    grid-area: submit;
+}
+
+/*grid area for form*/
+form.tp {
+    display: grid;
+    grid-template-areas: 
+        'adultsL adultsI kidsL kidsI'
+        'TTypeBuyL TTypeBuyI dateL dateI'
+        'submit submit submit submit';
+    grid-gap: 20px;
+}
+
 /*Submit input within tp class (on Ticket Page)*/
 .tp input[type = submit] {
-    background-color: #7111B4;
-    color:#FFFFFF;
+    background-color : #7111B4;
+    color : #FFFFFF;
+    margin-bottom : 20px;
+    font-size : 2rem;
 }
+
+.tp input[type = submit]:hover {
+    font-size : 2.5rem;
+    color : #7111B4;
+    background-color : #FFFFFF;
+}
+
+/*Buy Now Area End CSS*/
+/*--------------------*/
+
 /*=================================*/
 /*==== END TICKETS page styles ====*/
 /*=================================*/
