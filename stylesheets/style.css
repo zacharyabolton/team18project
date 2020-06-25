@@ -723,7 +723,6 @@ div.tType {
 .tType img {
     width : 100%;
     max-width : 350px;
-    
 }
 
 /*Ticket Type Area End CSS*/
@@ -878,6 +877,11 @@ form.tp {
 
 }
 
+@media only screen and (max-width: 800px) and (min-width : 350px){
+    .tType img {
+        margin : 0px calc((100% - 350px)/2);
+    }
+}
 /*Buy Now Area End CSS*/
 /*--------------------*/
 
