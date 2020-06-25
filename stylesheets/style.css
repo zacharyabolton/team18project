@@ -269,7 +269,12 @@ p.menu {color:}
 }
 
 .service-menu ul li a {
+    color: white;
     text-decoration: none;
+}
+
+.service-menu ul li a:hover {
+    color: blue;
 }
 
 .service-menu p {
@@ -281,8 +286,30 @@ p.menu {color:}
 }
 
 @media only screen and (max-width: 800px) {
+    .footer-information {
+        margin-top: -2rem;
+    }
+
     .sitemap div {
         width: 32.8%;
+    }
+
+    .service-menu ul {
+        margin-bottom: 0rem;
+    }
+
+    .service-menu ul li:first-child {
+        width: 30%;
+    }
+
+    .service-menu ul li {
+        font-size: 0.75rem;
+        width: 20%;
+    }
+
+    .service-menu p {
+
+        margin-top: 0rem;
     }
 }
 
@@ -307,11 +334,14 @@ p.menu {color:}
 
 @media only screen and (max-width: 800px) {
     .hoButton {
-        padding: 0.5rem 0.7rem;
+        padding: 0.5rem 0rem;
+        border-radius: 0rem;
+        width: 80%;
+        text-align: center;
     }
-
     .hoButton:hover {
-        padding: 0.6rem 0.84rem;
+        padding: 0.5rem 0rem;
+        box-shadow: none;
     }
 }
 
@@ -328,12 +358,12 @@ p.menu {color:}
     left: 10%;
 }
 
-.hoMain img{
+.hoMain img {
     width: 100%;
 }
 
 .hoMainTitle {
-    top: 5rem;
+    top: 7rem;
     font-family: 'Cinzel', serif;
     background-color: transparent;
 }
@@ -343,12 +373,20 @@ p.menu {color:}
 }
 
 .hoMainBlurb {
-    top: 10rem;
+    top: 13rem;
     max-width: 80%;
     font-family: 'Poppins', sans-serif;
     background-color: transparent;
     text-shadow: 0rem 0rem 0.3rem black;
-    
+}
+
+.hoMainBlurb mark {
+    background-color: rgba(0, 0, 0, 0.3);
+    color: #fff; 
+    display: inline;
+    padding: 0.05rem 0.5rem;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
 }
 
 .hoMainCTA {
@@ -359,11 +397,27 @@ p.menu {color:}
 }
 
 @media only screen and (max-width: 800px) {
-    .hoMainBlurb {
+
+    .hoMain .hoContent {
         position: absolute;
-        text-align: right;
-        width: 40%;
-        right: 1rem;
+        text-align: center;
+    }
+
+    .hoMainTitle {
+        top: 13vw;
+        width: 80%;
+    }
+
+    .hoMainBlurb {
+        font-size: 2.2vw;
+        top: 30vw;
+        width: 100%;
+        text-align: center;
+    }
+
+    .hoMainCTA {
+        position: absolute;
+        bottom: 0.5rem;
     }
 }
 
@@ -402,6 +456,22 @@ p.menu {color:}
 .hoAlertMore:hover {
     color: #5EA4BF;
     cursor: pointer;
+}
+
+@media only screen and (max-width: 800px) {
+    .hoAlertMore {
+        position: absolute;
+        top: 0rem;
+        right: 0rem;
+        height: 100%;
+        width: 6rem;        
+        line-height: 1.5rem;
+    }
+
+    .hoAlertMore span {
+        display: block;
+        font-size: 3rem;
+    }
 }
 
 /* END Styles for the COVID-19 message */
@@ -443,17 +513,20 @@ p.menu {color:}
     width: 40%;
 }
 
+.hoPopRideBlurb mark {
+    background-color: rgba(0, 0, 0, 0.3);
+    color: #fff; 
+    display: inline;
+    padding: 0.05rem 0.5rem;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+}
+
 .hoPopRideCTA {
     bottom: 2rem;
     font-family: 'Poppins', sans-serif;
     background-color: #7111B4;
     color: white;
-}
-
-.hoOffer, .hoOfferTitle {
-    font-family: 'Poppins', sans-serif;
-    background-color: white;
-    color: black;
 }
 
 .hoPopRideTitle.hoContent.right {
@@ -462,6 +535,38 @@ p.menu {color:}
 
 .hoPopRideCTA.hoButton.hoContent.right {
     right: 16rem;
+}
+
+@media only screen and (max-width: 800px) {
+    
+    .hoPopRideTitle {
+        top: 0.1vw;
+        width: 80%;
+        text-align: center;
+    }
+
+    .hoPopRideBlurb {
+        top: 10vw;
+        font-size: 2.2vw;
+        text-align: center;
+        width: 80%;
+    }
+
+    .popRide2 {
+        display: none;
+    }
+
+    .popRide3 {
+        top: -2.1rem;
+    }
+
+    .hoPopRideTitle.hoContent.right {
+        right: 10%;
+    }
+    
+    .hoPopRideCTA.hoButton.hoContent.right {
+        right: 10%;
+    }
 }
 
 /* END Styles for the popular rides sections */
@@ -489,10 +594,51 @@ p.menu {color:}
     left: 2rem;
 }
 
+.hoOffer, .hoOfferTitle {
+    font-family: 'Poppins', sans-serif;
+    background-color: white;
+    color: black;
+}
+
 .hoOfferButton {
     position: absolute;
     bottom: 1rem;
     right: 3rem;
+}
+
+@media only screen and (max-width: 800px) {
+    .hoOffer {
+        transform: translate(-2.5rem, -1.6rem);
+        position: static;
+        width: 100%;
+        max-width: 100%;
+        z-index: 100;
+        text-align: center;
+        padding: 1rem 0rem;
+        height: auto;
+        border-radius: 0rem;
+        box-shadow: none;
+    }
+
+
+    .hoOffer .hoOfferTitle {
+        margin-top: 0rem;
+    }
+
+    .hoOffer figcaption {
+        margin-bottom: 1rem;
+    }
+
+    .hoOfferButton {
+        position: static;
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+
+    .hoOfferButton:hover {
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
 }
 
 /* END Styles for the offers sections */
