@@ -846,8 +846,20 @@ form.tp {
     background-color : #FFFFFF;
 }
 
-/*media query to adjust form in small screens*/
+/*media query to adjust view in small screens*/
 @media only screen and (max-width: 800px) {
+    /*ticketTypes class (the container for all ticket type divs)*/
+    .ticketTypes {
+        display: grid;
+        grid-template-areas: 
+            'tTypeHead'
+            'tType1'
+            'tType2' 
+            'tType3';
+        grid-row-gap: 20px;
+    }
+    
+    /*grid area for form*/
     form.tp {
         display: grid;
         grid-template-areas: 
