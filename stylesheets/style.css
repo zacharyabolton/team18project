@@ -1679,10 +1679,6 @@ just picked some random slightly lighter/darker versions to keep in style - A */
     background-color: #FFFFFF;  
 }
 
-/*Commented out for now as it affect the look in tickets page - we can discuss on Sunday*/
-/* a:visited {
-    color: #420270;
-} */
 a:link {
     color: #FFFFFF;
 }
