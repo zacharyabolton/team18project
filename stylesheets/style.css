@@ -986,9 +986,17 @@ form.tp {
 /*=================================*/
 
 
-/*=========================================*/
-/*==== START EXPLORE [ex*] page styles ====*/
-/*=========================================*/
+
+
+
+
+
+
+
+
+
+
+
 
 
 /*=========================================*/
@@ -1047,7 +1055,7 @@ h1.exLanding {
     margin-top: 8rem;;
     background-color: greenyellow;
     border-radius: 0.5rem;
-    
+  
 }
 h2.exLanding {
     position: relative;
@@ -1060,6 +1068,7 @@ h2.exLanding {
     background-color: transparent;
     
 }
+
 
 
  main.ex
