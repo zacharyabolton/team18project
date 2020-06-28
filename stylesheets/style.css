@@ -707,13 +707,24 @@ form.tp {
 /*=================================*/
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*=========================================*/
 /*==== START EXPLORE [ex*] page styles ====*/
 /*=========================================*/
 
-/* trying out css selectors, apologies if you suddenly have unexplained styling. 
-It's maybe more risky than defining each class and applying a style to it, but it 
-might help to show we have a good understanding of course content (certainly it's helping me at any rate!) - A */
+
 
 /*
 [class*="ex"] 
@@ -722,20 +733,661 @@ might help to show we have a good understanding of course content (certainly it'
     background-color: #7111B4;
     color: rgb(43, 255, 0);
 
-}
-.main
-{
-    background-color: coral;
-}
-main.ex h3 {
-    background-color: greenyellow;
-}
-
-main.ex h4 {
-    background-color: hotpink;
-}
-
 */
+
+
+/* .ex general page grid */
+
+
+.exHeaderNav { grid-area: header; }
+#exSubNav{grid-area: subnav;}
+main.ex{grid-area: main;}
+aside.twitter{grid-area: aside;}
+#exFooter{grid-area: footer;}
+
+
+.explore {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-areas:
+      'header header header header header header'
+      'subnav subnav subnav subnav subnav subnav'
+      'main main main main main main'
+      'aside aside aside aside aside aside'
+      'footer footer footer footer footer footer';
+    
+  }
+
+/* .ex attraction&events grid */
+
+
+/* .ex attractions grid */
+
+
+
+/* .ex facilities & directions grid */
+
+
+
+h1.exLanding {
+    position: relative;
+    font-size:4rem;
+    padding: 2rem;
+    margin-top: 8rem;;
+    background-color: greenyellow;
+    border-radius: 0.5rem;
+    
+}
+h2.exLanding {
+    position: relative;
+    padding: 2rem;
+    border-radius: 0.5rem;
+}
+#exTitle::first-letter {
+    font-size: 3rem;
+    color: #ff0064;
+    background-color: transparent;
+    
+}
+
+
+ main.ex
+{
+        position: relative;
+        max-width: 1000px;
+        margin-left: auto;
+        margin-right: auto;
+        
+}
+
+#exTitle {
+    position: relative;
+    font-size:2rem;
+    padding: 1rem;
+    margin-top: 1rem;
+    background-color: transparent;
+    background-image: none;
+    max-width: 1000px;
+    border-radius: 0.5rem;
+
+} 
+main.ex h2 {
+    padding: 1rem;
+    border-radius: 0.5rem;
+    font-size: 2rem;
+}
+main.ex h3, main.ex h4, main.ex p {
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+
+/* main.ex p {
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+} */
+
+body.explore {
+    position: relative;
+}
+
+body.explore h1 {
+    background-image: linear-gradient(to bottom right, #ff0064, coral);
+}
+body.explore h2 {
+    background-image: linear-gradient(to bottom right, #ff0064, coral);
+}
+ body.explore h3 {
+    background-image: linear-gradient(to bottom right, coral, #ff0064);
+}
+
+
+
+/* .ex tickets buttons on explore page css */
+.exTickets {
+    padding: 0.2rem;
+    border-radius: 0.3rem;
+    background-image: linear-gradient(to bottom right, coral, #ff0064);
+    color: #ffffff;
+}
+a:link.exTickets {
+    color: #FF0064;
+} 
+a:hover.exTickets {
+    color: #ff0064;
+    background-color: white;
+    background-image: none;
+    border-color: white;
+    border-style: solid;
+}
+
+/* .ex-page-specific main nav navigation styling */
+.exNav {
+    position: absolute;
+}
+div.info-bar h3 {
+    background-color: #ff0064;
+    background-image: none;
+}
+
+/* .ex page sub navigation menu styling */
+/* nav.exSubNav-text { grid-area: nav; } */
+
+nav.exSubNav-text{
+    /* background-color:#5EA4BF; */
+    /* text-align:justify; */
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+}
+
+nav.exSubNav-text ol{
+
+    list-style:none;
+    margin-top:55px;
+    padding:0rem;
+    text-align:center;
+    margin-block-start: 3.5rem;
+    margin-block-end: 0rem;
+    
+}
+
+nav.exSubNav-text li{
+    display:inline;
+    border: 2px solid white;
+    border-radius: 0.5rem;
+    padding:5px;
+    
+    
+}
+
+nav.exSubNav-text li a {
+    font-family: Poppins, Arial, Helvetica, sans-serif;
+    font-style: normal;
+    text-decoration: none;
+    font-variant: normal;
+    font-weight: normal;
+    font-size: 1em;
+    color: white;
+    display:inline-block;
+    padding:15px; 
+}
+nav.exSubNav-text li:hover {
+
+    color: white;
+    background-image: linear-gradient(to bottom right, #ff0064, coral);
+    border-color: white;
+    border-style: solid;
+}
+nav.exSubNav-text li a:hover {
+    color: white;
+}
+
+/* .ex  attractions */
+/* .ex attractions grid layout */
+
+
+
+/* .ex new attractions grid */
+.exNew1{  grid-column: 1 / 2;
+    grid-row: 1;}
+.exNew2{  grid-column: 2 / 3;
+    grid-row: 1;}
+.exNew3{  grid-column: 3 / 4;
+    grid-row: 1;}
+.exNew4{  grid-column: 4 / 5;
+    grid-row: 1;}
+
+
+
+.exNewAttList {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1rem;
+    grid-auto-rows: minmax(100px, auto);
+    padding: 1rem
+
+  }
+
+#exploreAttractionsMap ul {
+    list-style-type: none;
+}
+
+.exNew1 {
+    background-color: #ffffff;
+    border-radius: 0.5rem;
+    border: 2px solid white;
+    align-content: center;
+
+    background-image: linear-gradient(to bottom right, rgba(255, 190, 115, 0.99), rgba(255, 168, 7, 0.3)), 
+    url("../images/derek-thomson-vY86Rq8cfjQ-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.exNew2{
+    background-color: #ffffff;
+    border-radius: 0.5rem;
+    border: 2px solid white;
+    align-content: center;
+
+    background-image: linear-gradient(to bottom right, rgba(255, 190, 115, 0.99), rgba(255, 168, 7, 0.3)), 
+    url("../images/kanyon-bollinger-D_W-652G3KE-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.exNew3{
+    background-color: #ffffff;
+    border-radius: 0.5rem;
+    border: 2px solid white;
+    align-content: center;
+
+    background-image: linear-gradient(to bottom right, rgba(255, 190, 115, 0.99), rgba(255, 168, 7, 0.3)), 
+    url("../images/lily-banse-4lSxvOV3J3Y-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.exNew4{
+    background-color: #ffffff;
+    border-radius: 0.5rem;
+    border: 2px solid white;
+    align-content: center;
+
+    background-image: linear-gradient(to bottom right, rgba(255, 190, 115, 0.99), rgba(255, 168, 7, 0.3)), 
+    url("../images/jesse-adair-SANK_xON7Hw-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+
+/* .ex Classic Attractions grid */
+.exCla1{  grid-column: 1 / 2;
+    grid-row: 1;}
+.exCla2{  grid-column: 2 / 3;
+    grid-row: 1;}
+.exCla3{  grid-column: 3 / 4;
+    grid-row: 1;}
+.exCla4{  grid-column: 4 / 5;
+    grid-row: 1;}
+
+
+
+.exClaAttList {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1rem;
+    grid-auto-rows: minmax(100px, auto);
+    padding: 1rem
+
+  }
+
+.exClassicAttractions ul {
+    list-style-type: none;
+}
+
+.exCla1 {
+    background-color: #ffffff;
+    border-radius: 0.5rem;
+    border: 2px solid white;
+    align-content: center;
+
+    background-image: linear-gradient(to bottom right, rgba(255, 148, 115, 0.99), rgba(255, 168, 7, 0.3)), 
+    url("../images/MelissaMumArchery.JPG");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.exCla2 {
+    background-color: #ffffff;
+    border-radius: 0.5rem;
+    border: 2px solid white;
+    align-content: center;
+
+    background-image: linear-gradient(to bottom right, rgba(255, 115, 115, 0.99), rgba(255, 168, 7, 0.3)), 
+    url("../images/jerry-wang-kCt8GRWsOhU-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.exCla3 {
+    background-color: #ffffff;
+    border-radius: 0.5rem;
+    border: 2px solid white;
+    align-content: center;
+
+    background-image: linear-gradient(to bottom right, rgba(255, 190, 115, 0.99), rgba(255, 168, 7, 0.3)), 
+    url("../images/jesse-adair-SANK_xON7Hw-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.exCla4 {
+    background-color: #ffffff;
+    border-radius: 0.5rem;
+    border: 2px solid white;
+    align-content: center;
+
+    background-image: linear-gradient(to bottom right, rgba(255, 218, 115, 0.99), rgba(255, 168, 7, 0.3)), 
+    url("../images/boris-yue-gowrigaNHrg-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+
+
+/* .ex More Attractions grid */
+.exCC{  grid-column: 1 / 3;
+    grid-row: 1;}
+.exAK{  grid-column: 3 / 5;
+    grid-row: 1;}
+.exMZ{  grid-column: 1 / 3;
+    grid-row: 2;}
+.exSS{  grid-column: 3 / 5;
+    grid-row: 2;}
+.exReR{  grid-column: 1 / 3;
+        grid-row: 3;}
+.exFF{  grid-column: 3 / 5;
+        grid-row: 3;}
+.exRoR{  grid-column: 1 / 3;
+        grid-row: 4;}
+.exHT{  grid-column: 3 / 5;
+        grid-row: 4;}
+
+
+
+.exAllOtherAttractions {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1rem;
+    grid-auto-rows: minmax(100px, auto);
+    padding: 1rem
+
+  }
+
+.exAllOAtt ul {
+    list-style-type: none;
+}
+
+.exAllOAtt ul li ul li h5 {
+    background-color: #5EA4BF;
+    border-radius: 0.5rem;
+    padding: 0.3rem;
+    padding-left: 0.3rem;
+    margin-left: 0rem;
+
+}
+
+.exCC{
+    background-color: #7111B4;
+    border-radius: 0.5rem;
+    border: 2px solid white;
+    align-content: center;
+
+    background-image: linear-gradient(to bottom right, rgba(255, 190, 115, 0.99), rgba(255, 168, 7, 0.3)), 
+    url("../images/boris-yue-gowrigaNHrg-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.exAK{
+    background-color: #7111B4;
+    border-radius: 0.5rem;
+    border: 2px solid white;
+    align-content: center;
+
+    background-image: linear-gradient(to bottom right, rgba(255, 0, 85, 0.99), rgba(255, 7, 19, 0.3)), 
+    url("../images/popular-ride-3.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.exMZ{
+    background-color: #7111B4;
+    border-radius: 0.5rem;
+    border: 2px solid white;
+    align-content: center;
+
+    background-image: linear-gradient(to bottom right, rgba(255, 0, 85, 0.99), rgba(255, 7, 19, 0.3)), 
+    url("../images/popular-ride-3.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.exSS{
+    background-color: #7111B4;
+    border-radius: 0.5rem;
+    border: 2px solid white;
+    align-content: center;
+
+    background-image: linear-gradient(to bottom right, rgba(255, 190, 115, 0.99), rgba(255, 168, 7, 0.3)), 
+    url("../images/boris-yue-gowrigaNHrg-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.exReR{
+    background-color: #7111B4;
+    border-radius: 0.5rem;
+    border: 2px solid white;
+    align-content: center;
+
+    background-image: linear-gradient(to bottom right, rgba(255, 190, 115, 0.99), rgba(255, 168, 7, 0.3)), 
+    url("../images/boris-yue-gowrigaNHrg-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.exFF{
+    background-color: #ffc21b;
+    border-radius: 0.5rem;
+    border: 2px solid white;
+    align-content: center;
+
+    background-image: linear-gradient(to bottom right, rgba(255, 0, 85, 0.99), rgba(255, 7, 19, 0.3)), 
+    url("../images/popular-ride-3.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.exRoR{
+    background-color: #7111B4;
+    border-radius: 0.5rem;
+    border: 2px solid white;
+    align-content: center;
+
+    background-image: linear-gradient(to bottom right, rgba(255, 0, 85, 0.99), rgba(255, 7, 19, 0.3)), 
+    url("../images/popular-ride-3.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.exHT{
+    background-color: #ffc21b;
+    border-radius: 0.5rem;
+    border: 2px solid white;
+    align-content: center;
+    background-image: linear-gradient(to bottom right, rgba(255, 190, 115, 0.99), rgba(255, 168, 7, 0.3)), 
+    url("../images/boris-yue-gowrigaNHrg-unsplash.jpg");
+
+    /* background-image: linear-gradient(to bottom right, rgba(255, 0, 85, 0.99), rgba(255, 7, 19, 0.3)), 
+    url("../images/popular-ride-3.jpg"); */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+/*  */
+h2.exMainDisplay {
+    margin-bottom: 0rem;
+    padding-bottom: 0rem;
+}
+#exRandAT {
+    border-bottom-left-radius: 0rem;
+    border-bottom-right-radius: 0rem;
+}
+#exClickMapCall {
+    background-color: #7111B4;
+    background-image: none;
+    margin-top: 0rem;
+    padding-left: 0.5rem;
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+    padding-right: 0rem;
+    border-top-right-radius: 0rem;
+    border-top-left-radius: 0rem;
+
+}
+
+
+.exNewAttractions {
+
+}
+#exNewT {
+
+}
+.exNewAttList {
+
+    list-style: none;
+}
+.exNewAttList li{
+
+    background-color: #ff0064;
+    border-radius: 0.5rem;
+}
+
+.exClassicAttractions {
+
+}
+#exClassicT {
+
+}
+.exAllOtherAttractions {
+
+}
+#exMoreT {
+
+}
+.exploreAttractions {
+    background-color: #5EA4BF;
+    border-radius: 0.5rem;
+}
+.exploreAttractions p, .exploreAttractions h4 {
+    background-color: transparent;
+}
+/* .ex events */
+
+#Events {
+    background-color: #5EA4BF;
+    border-radius: 0.5rem;
+}
+/*  .ex events grid */
+
+.event1{  grid-column: 1 / 3;
+    grid-row: 1;}
+.event2{  grid-column: 3 / 5;
+    grid-row: 1;}
+.event3{  grid-column: 1 / 3;
+    grid-row: 2;}
+.event4{  grid-column: 3 / 5;
+    grid-row: 2;}
+
+
+
+.exEventsList {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1rem;
+    grid-auto-rows: minmax(100px, auto);
+    padding: 1rem
+
+  }
+
+#Events ol {
+    list-style-type: none;
+}
+
+.event1, .event2, .event3, .event4{
+    background-color: #FF0064;
+    border-radius: 0.5rem;
+    border: 2px solid white;
+    align-content: center;
+
+    background-image: linear-gradient(to bottom right, rgba(255, 0, 85, 0.99), rgba(255, 7, 19, 0.3)), 
+    url("../images/popular-ride-3.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.event1 h4, .event2 h4, .event3 h4, .event4 h4 {
+    background-color: #5EA4BF;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 0.2rem;
+    border-top: 0.5rem;
+}
+.event1 p, .event2 p, .event3 p, .event4 p {
+    background-color: transparent;
+}
+.event1 img, .event2 img, .event3 img, .event4 img {
+    padding:1rem;
+    height: 200px;
+}
+
+/* .ex facilities css */
+.exFacilities {
+    background-color: #5EA4BF;
+    border-radius: 0.5rem;
+}
+.exFacilities p {
+    background-color: transparent;
+}
+
+/* .ex directions css */
+
+.exDirections {
+    position:relative;
+    background-color: #7111B4;
+    border-radius: 0.5rem;
+    background-image: url("wls_mlbn-tMqtFzyXiN4-unsplash.jpg");
+} 
+h3.exDirectionsH3 {
+    border-radius: none;
+    background-image: none;
+}
+.exDirections p {
+    background-color: transparent;
+}
+.exDirections address {
+    float:left;
+    margin: 1rem;
+}
+.directionsMap {
+    position: relative;
+    float: right;
+    margin: 2rem;
+
+}
+/* ,ex socials - twitter aside */
+aside.twitter :not(h3) {
+    padding-left: 1rem;
+}
+
+aside.twitter ul {
+    list-style: none;
+}
+
+aside.twitter ul li {
+    float: left;
+    
+}
+/* .ex footer */
+
+#exFooter {
+    padding-top: .5rem;
+}
 /*=========================================*/
 /*== END EXPLORE [ex*] class page styles ==*/
 /*=========================================*/
@@ -750,9 +1402,9 @@ just picked some random slightly lighter/darker versions to keep in style - A */
 }
 
 /*Commented out for now as it affect the look in tickets page - we can discuss on Sunday*/
-a:visited {
-/*    color: #420270;*/
-}
+/* a:visited {
+    color: #420270;
+} */
 a:link {
     color: #FFFFFF;
 }
