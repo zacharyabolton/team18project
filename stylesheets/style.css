@@ -13,6 +13,8 @@ body {
 
 /* default main styles */
 main {
+    /* position relative for greater control over child elements */
+    /* by positioning absolute (particularly .hoOffer elements */
     position: relative;
     font-size: 16px;
     max-width: 800px;
@@ -99,7 +101,9 @@ p.menu {color:}
     background-color: #FF0064;
     height: 2rem;
     text-align: center;
+    /* Keep always at top of page */
     position: fixed;
+    /* Keep in front of all other elements */
     z-index: 5000;
 }
 
@@ -107,6 +111,8 @@ p.menu {color:}
     background-color: transparent;
     margin-top: 0rem;
     margin-bottom: 0rem;
+    /* Vertically align text by making line height */
+    /* same as overal height of parent element */
     line-height: 2rem;
 }
 
@@ -116,20 +122,29 @@ p.menu {color:}
 }
 
 .nav-bar {
+    /* Keep always at top of page */
     position: fixed;
     width: 100%;
     height: 3rem;
+    /* Make a gap large enough for .info-bar */
     margin-top: 2rem;
+    /* Ad 3d effect since it's in front of all other */
+    /* elements and stuck to the top of the screen */
     box-shadow: 0rem 0.2rem 1rem black;
+    /* Keep in front of all other elements */
     z-index: 5000;
     background-color: #0075A2;
 }
 
 .nav-bar header {
+    /* position logo */
     top: -2rem;
     left: 1rem;
+    /* position relative to the navbar */
     position: absolute;
-    z-index: 1000;
+    /* Keep in front of all other elements */
+    /* including navbar */
+    z-index: 6000;
 }
 
 .nav-bar header object {
@@ -137,37 +152,51 @@ p.menu {color:}
 }
 
 .nav-bar ul {
+    /* remove default bullets */
     list-style: none;
+    /* keep within main area */
     padding-right: 25%;
     margin-top: 0rem;
 }
 
 .nav-bar ul li {
     text-align: center;
+    /* push buttons to opposite side as logo */
     float: right;
+    /* normalize look of nav buttons */
     width: 9rem;
 }
 
 .nav-bar ul li:hover {
+    /* change in color on hover indicates action item */
     background-color: rgba(255,255,255,0.5);
 }
 
 .nav-bar ul li a {
     color: white;
     text-decoration: none;
+    /* vertically center text by making */
+    /* line height equal to parent height */
     line-height: 3rem;
+    /* make a tag fill parent li so that the entire */
+    /* area within the button is clickable */
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .nav-bar ul li.active, .nav-bar ul li.active a {
+    /* indicate which page visitor is viewing by inverting */
+    /* colors for corresponding nav button */
     background-color: white;
+    /* prevent clashes with global rules */
     color: #0075A2 !important;
 }
 
+/* Navbar styles for smaller screens */
 @media only screen and (max-width: 800px) {
     .info-bar {
+        /* entire screen becomes main area */
         text-align: right;
     }
     
@@ -200,8 +229,7 @@ p.menu {color:}
         color: #0075A2 !important;
     }
 }
-
-
+/* END Navbar styles for smaller screens */
 
 /*=======================================*/
 /*========== END Navbar styles ==========*/
@@ -216,6 +244,7 @@ p.menu {color:}
 }
 
 .social-links a {
+    /* remove default styling */
     text-decoration: none;
     padding-left: 0.5rem;
     padding-right: 0.5rem;
@@ -223,11 +252,13 @@ p.menu {color:}
 
 .sitemap {
     background-color: white;
+    /* add some pleasing white space */
     padding-top: 2rem;
     padding-bottom: 2rem;
 }
 
 .sitemap div {
+    /* display in three columns of three */
     display: inline-block;
     text-align: center;
     width: 33%;
@@ -240,10 +271,12 @@ p.menu {color:}
 
 .sitemap div ul li a {
     color: black;
+    /* remove default styling */
     text-decoration: none;
 }
 
 .sitemap div ul li a:hover {
+    /* indicate actionable item on hover */
     color: blue;
     text-decoration: underline;
 }
@@ -261,15 +294,26 @@ p.menu {color:}
 }
 
 .service-menu ul li {
+    /* add pleasing empty space */
     width: 10rem;
+    /* show links next to one another in a line */
     display: inline-block;
+    /* vertically align text by making */
+    /* line height same as parent height */
     line-height: 3rem;
     padding-left: 1rem;
     padding-right: 1rem;
 }
 
 .service-menu ul li a {
+    color: white;
+    /* remove default styling */
     text-decoration: none;
+}
+
+.service-menu ul li a:hover {
+    /* indicate action item on hover */
+    color: blue;
 }
 
 .service-menu p {
@@ -280,11 +324,34 @@ p.menu {color:}
     line-height: 2rem;
 }
 
+/* footer styles for smaller screens */
 @media only screen and (max-width: 800px) {
+    .footer-information {
+        margin-top: -2rem;
+    }
+
     .sitemap div {
         width: 32.8%;
     }
+
+    .service-menu ul {
+        margin-bottom: 0rem;
+    }
+
+    .service-menu ul li:first-child {
+        width: 30%;
+    }
+
+    .service-menu ul li {
+        font-size: 0.75rem;
+        width: 20%;
+    }
+
+    .service-menu p {
+        margin-top: 0rem;
+    }
 }
+/* END footer styles for smaller screens */
 
 /*=======================================*/
 /*========== END Footer styles ==========*/
@@ -296,59 +363,84 @@ p.menu {color:}
 
 /* General home page styles */
 .hoButton {
+    /* style a links like buttons */
     padding: 1rem 1.5rem;
     border-radius: 0.5rem;
 }
 
 .hoButton:hover {
+    /* indicate actionable item on hover */
     padding: 1.2rem 1.8rem;
     box-shadow: 0rem 0.2rem 1rem black;
 }
 
 @media only screen and (max-width: 800px) {
     .hoButton {
-        padding: 0.5rem 0.7rem;
+        /* change button styles in smaller layouts so */
+        /* as to make better use of screen real estate */
+        padding: 0.5rem 0rem;
+        border-radius: 0rem;
+        width: 80%;
+        text-align: center;
     }
-
     .hoButton:hover {
-        padding: 0.6rem 0.84rem;
+        /* indicate actionable item on hover */
+        padding: 0.5rem 0rem;
+        box-shadow: none;
     }
 }
-
 /* END General home page styles */
 
 /* Styles for the main hero image content */
 .hoMain {
+    /* position relative in order to gain more control */
+    /* over child elements by positioning absolute */
     position: relative;
     margin-bottom: 0rem;
 }
 
 .hoMain .hoContent {
+    /* position absolute for precision in placing */
     position: absolute;
     left: 10%;
 }
 
-.hoMain img{
+.hoMain img {
+    /* make image like a css background image */
+    /* without loss of accesability */
     width: 100%;
 }
 
 .hoMainTitle {
-    top: 5rem;
+    top: 7rem;
     font-family: 'Cinzel', serif;
     background-color: transparent;
 }
 
 .hoMainTitle::first-letter {
+    /* fixing conflict with global style */
     background-color: transparent;
 }
 
 .hoMainBlurb {
-    top: 10rem;
+    top: 13rem;
     max-width: 80%;
     font-family: 'Poppins', sans-serif;
     background-color: transparent;
+    /* ad drop shadow for readability */
     text-shadow: 0rem 0rem 0.3rem black;
-    
+}
+
+.hoMainBlurb mark {
+    /* mark styling for readability */
+    background-color: rgba(0, 0, 0, 0.3);
+    color: #fff; 
+    display: inline;
+    padding: 0.05rem 0.5rem;
+    /* readability css trick taken from */
+    /* https://css-tricks.com/design-considerations-text-images/#text-in-a-box */
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
 }
 
 .hoMainCTA {
@@ -358,24 +450,47 @@ p.menu {color:}
     color: white;
 }
 
+/* main hero image content for smaller screens */
 @media only screen and (max-width: 800px) {
-    .hoMainBlurb {
+
+    .hoMain .hoContent {
         position: absolute;
-        text-align: right;
-        width: 40%;
-        right: 1rem;
+        text-align: center;
+    }
+
+    .hoMainTitle {
+        /* change text size position based on width of screen */
+        top: 13vw;
+        width: 80%;
+    }
+
+    .hoMainBlurb {
+        /* change text size based on width of screen */
+        font-size: 2.2vw;
+        /* change text size position based on width of screen */
+        top: 30vw;
+        width: 100%;
+        text-align: center;
+    }
+
+    .hoMainCTA {
+        position: absolute;
+        bottom: 0.5rem;
     }
 }
-
+/* END main hero image content for smaller screens */
 /* END Styles for the main hero image content */
 
 /* Styles for the COVID-19 message */
 
 .hoAlert {
+    /* position relative in order to gain more control */
+    /* over child elements by positioning absolute */
     position: relative;
 }
 
 .hoAlert div {
+    /* keep room for 'learn more' button on the right */
     width: 75%;
     font-weight: normal;
     color: white;
@@ -391,6 +506,7 @@ p.menu {color:}
 }
 
 .hoAlertMore {
+    /* position absolute for precision in placing */
     position: absolute;
     top: 1.5rem;
     right: 1rem;
@@ -400,16 +516,36 @@ p.menu {color:}
 }
 
 .hoAlertMore:hover {
+    /* indicate action item on hover */
     color: #5EA4BF;
     cursor: pointer;
 }
 
+/* styles for COVID-19 message on smaller screens */
+@media only screen and (max-width: 800px) {
+    .hoAlertMore {
+        position: absolute;
+        top: 0rem;
+        right: 0rem;
+        height: 100%;
+        width: 6rem;        
+        line-height: 1.5rem;
+    }
+
+    .hoAlertMore span {
+        display: block;
+        font-size: 3rem;
+    }
+}
+/* END styles for COVID-19 message on smaller screens */
 /* END Styles for the COVID-19 message */
 
 /* Styles for the popular rides sections */
 
 .hoPopRide {
     margin: 0rem;
+    /* position relative in order to gain more control */
+    /* over child elements by positioning absolute */
     position: relative;
     margin-top: -0.5rem;
 }
@@ -419,14 +555,17 @@ p.menu {color:}
 }
 
 .hoPopRide .hoContent {
+    /* position absolute for precision in placing */
     position: absolute;
 }
 
 .hoPopRide .hoContent.left {
+    /* styles for staggered placing of offers / popular rides */
     left: 10%;
 }
 
 .hoPopRide .hoContent.right {
+    /* styles for staggered placing of offers / popular rides */
     right: 10%;
 }
 
@@ -440,7 +579,19 @@ p.menu {color:}
     top: 5rem;
     font-family: 'Poppins', sans-serif;
     background-color: transparent;
+    /* leave from for offer protrusion */
     width: 40%;
+}
+
+.hoPopRideBlurb mark {
+    background-color: rgba(0, 0, 0, 0.3);
+    color: #fff; 
+    display: inline;
+    padding: 0.05rem 0.5rem;
+    /* readability css trick taken from */
+    /* https://css-tricks.com/design-considerations-text-images/#text-in-a-box */
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
 }
 
 .hoPopRideCTA {
@@ -450,20 +601,56 @@ p.menu {color:}
     color: white;
 }
 
-.hoOffer, .hoOfferTitle {
-    font-family: 'Poppins', sans-serif;
-    background-color: white;
-    color: black;
-}
-
 .hoPopRideTitle.hoContent.right {
+    /* styles for staggered placing of offers / popular rides */
     right: 14rem;
 }
 
 .hoPopRideCTA.hoButton.hoContent.right {
+    /* styles for staggered placing of offers / popular rides */
     right: 16rem;
 }
 
+/* styles for popular rides sections on smaller screens */
+@media only screen and (max-width: 800px) {
+    
+    .hoPopRideTitle {
+        /* place text based on width of screen */
+        top: 0.1vw;
+        width: 80%;
+        text-align: center;
+    }
+
+    .hoPopRideBlurb {
+        /* place text based on width of screen */
+        top: 10vw;
+        /* size text based on width of screen */
+        font-size: 2.2vw;
+        text-align: center;
+        width: 80%;
+    }
+
+    .popRide2 {
+        display: none;
+    }
+
+    .popRide3 {
+        top: -2.1rem;
+    }
+
+    .hoPopRideTitle.hoContent.right {
+        /* overwriting styles for staggered */
+        /* placing of offers / popular rides */
+        right: 10%;
+    }
+    
+    .hoPopRideCTA.hoButton.hoContent.right {
+        /* overwriting styles for staggered */
+        /* placing of offers / popular rides */
+        right: 10%;
+    }
+}
+/* END styles for popular rides sections on smaller screens */
 /* END Styles for the popular rides sections */
 
 /* Styles for the offers sections */
@@ -471,30 +658,85 @@ p.menu {color:}
 .hoOffer {
     width: 30%;
     max-width: 270px;
+    /* keep on top of main page specific content elements */
     z-index: 100;
+    /* position absolute for greater control over position */
     position: absolute;
+    /* move from default position */
     transform: translate(0rem, -7rem);
     text-align: center;
     padding: 1rem 1rem 2rem 1rem;
     height: 13rem;
     border-radius: 1rem;
+    /* ad 3d effect, since offers overlap surrounding content */
     box-shadow: 0rem 0.2rem 1rem black;
 }
 
 .hoOffer.right {
+    /* styles for staggered placing of offers / popular rides */
     right: 2rem;
 }
 
 .hoOffer.left {
+    /* styles for staggered placing of offers / popular rides */
     left: 2rem;
 }
 
+.hoOffer, .hoOfferTitle {
+    font-family: 'Poppins', sans-serif;
+    background-color: white;
+    color: black;
+}
+
 .hoOfferButton {
+    /* position absolute for greater control over position */
     position: absolute;
     bottom: 1rem;
     right: 3rem;
 }
 
+/* offer section styles for smaller screens */
+@media only screen and (max-width: 800px) {
+    .hoOffer {
+        /* overwriting above move from default position */
+        transform: translate(-2.5rem, -1.6rem);
+        /* positioning back to default in order for element to return to normal */
+        /* placement between surrounding elements rather than on top */
+        position: static;
+        width: 100%;
+        max-width: 100%;
+        /* keeping on top of surrounding elements to obscure misalignment */
+        z-index: 100;
+        text-align: center;
+        padding: 1rem 0rem;
+        height: auto;
+        border-radius: 0rem;
+        box-shadow: none;
+    }
+
+
+    .hoOffer .hoOfferTitle {
+        margin-top: 0rem;
+    }
+
+    .hoOffer figcaption {
+        margin-bottom: 1rem;
+    }
+
+    .hoOfferButton {
+        /* positioning back to default in order for element to return to normal */
+        /* placement between surrounding elements rather than on top */
+        position: static;
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+
+    .hoOfferButton:hover {
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+}
+/* END offer section styles for smaller screens */
 /* END Styles for the offers sections */
 
 /*=======================================*/
@@ -577,7 +819,6 @@ div.tType {
 .tType img {
     width : 100%;
     max-width : 350px;
-    
 }
 
 /*Ticket Type Area End CSS*/
@@ -693,12 +934,50 @@ form.tp {
     font-size : 2rem;
 }
 
+/*make changes to submit button on hover*/
 .tp input[type = submit]:hover {
     font-size : 2.5rem;
     color : #7111B4;
     background-color : #FFFFFF;
 }
 
+/*media query to adjust view in small screens*/
+@media only screen and (max-width: 800px) {
+    /*ticketTypes class (the container for all ticket type divs)*/
+    .ticketTypes {
+        display: grid;
+        grid-template-areas: 
+            'tTypeHead'
+            'tType1'
+            'tType2' 
+            'tType3';
+        grid-row-gap: 20px;
+    }
+    
+    /*grid area for form*/
+    form.tp {
+        display: grid;
+        grid-template-areas: 
+            'adultsL adultsI'
+            'kidsL kidsI'
+            'TTypeBuyL TTypeBuyI '
+            'dateL dateI'
+            'submit submit';
+        grid-gap: 20px;
+        grid-template-columns: 25% 75%;
+    }
+    
+    .tp input[type = submit] {
+        margin-bottom: 50px;
+    }
+
+}
+
+@media only screen and (max-width: 800px) and (min-width : 350px){
+    .tType img {
+        margin : 0px calc((100% - 350px)/2);
+    }
+}
 /*Buy Now Area End CSS*/
 /*--------------------*/
 
