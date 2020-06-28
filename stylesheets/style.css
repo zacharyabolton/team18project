@@ -185,7 +185,7 @@ p.menu {color:}
     align-items: center;
 }
 
-.nav-bar ul li.active, .nav-bar ul li.active a {
+.nav-bar ul li#active, .nav-bar ul li#active a {
     /* indicate which page visitor is viewing by inverting */
     /* colors for corresponding nav button */
     background-color: white;
@@ -224,7 +224,7 @@ p.menu {color:}
         font-size: 1rem;
     }
     
-    .nav-bar ul li.active, .nav-bar ul li.active a {
+    .nav-bar ul li#active, .nav-bar ul li#active a {
         background-color: white;
         color: #0075A2 !important;
     }
@@ -720,6 +720,7 @@ p.menu {color:}
     }
 
     .hoOffer figcaption {
+        margin-top: 2rem;
         margin-bottom: 1rem;
     }
 
