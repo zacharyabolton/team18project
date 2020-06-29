@@ -1110,8 +1110,8 @@ body.explore h2 {
     border-radius: 0.3rem;
     background-image: linear-gradient(to bottom right, coral, #ff0064);
     color: #ffffff;
-    border-color: white;
-    border-style: solid;
+    border: 1px solid white;
+   
 }
 a:link.exTickets {
     color: #FF0064;
