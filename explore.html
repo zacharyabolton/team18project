@@ -43,14 +43,15 @@
             <!-- navigation and company logo for the header section -->
 
             <nav class="exNav nav-bar">
+                <!-- specific exNav class so that the nav bar didn't scroll woth the explore page. 
+                    Too much reading, and jumping from part to  part the nav-bar obscured parts of the page, -->
                 <header>
-                    <!-- commenetd this out temporarily - using img tag allows it to be a clickable link, 
-                            but svg draws the logo and resizes more accurately... something to discuss sunday-A
+                            <!-- initially had this as a clickable link using an img tag wrapped in an a tag, 
+                                but decide as a group that with the home tab so close it was better served as 
+                                a dedmonstration of drawing svg files than a navigation tool -->
                             <object data="images/Logo_V_002.svg" width="220">
                             </object>
-                          -->
-                    <a href="index.html"><img src="images/Logo_V_002.svg" width="220"></a>
-                    <!-- <h1>Storyland Park</h1> -->
+
                 </header>
                 <ul>
                     <li>
@@ -71,7 +72,7 @@
         <!-- END navbars -->
 
 
-        <!-- Quicklinks/sub nav menu -->
+        <!-- Quicklinks/sub nav menu  for navigation of page specific elements-->
         <nav class="exSubNav-text" id="exSubNav">
             <ol>
                 <li><a href="explore.html#Attractions" class="ex">Attractions</a></li>
@@ -80,12 +81,14 @@
                 <li><a href="explore.html#Directions" class="ex">Directions</a></li>
             </ol>
         </nav>
+        
 
+        <main class="ex">
 
-        <main
-            class="ex">
-
-
+            <!-- back to top icon -->
+            <div class="backTotop">
+                <a href="explore.html"><img src="images/arrowBTT.png" width="30" alt="back to top icon" id="exBackToTop"></a>
+            </div>
             <!--  section displaaying attractions and events - the main part of the explore page-->
             <section class="ex exAttractionsAndEvents">
                 <a id="exploreAttractions"></a>
@@ -102,7 +105,7 @@
                     </div>
                     <div class="exAttractionsMap" id="exploreAttractionsMap">
 
-                        <img src="images/storylandparkmap.jpg" alt="Map of Storyland Attractions" width="960" height="540" usemap="#attractionsMap">
+                        <img src="images/storylandparkmap.jpg" alt="Map of Storyland Attractions" width="960" height="540" usemap="#attractionsMap" class="exAttractionsMap">
                         <map
                             name="attractionsMap">
                             <!-- Romance Road attractions -->
@@ -131,8 +134,10 @@
                         </map>
 
                     </div>
+                    <!-- list of new attractions -->
                     <div class="exNewAttractions">
                         <h3 class="exRideDisplay" id="exNewT">New at the park</h3>
+                        <!-- unordered list of items featured in New Attractions -->
                         <ul class="exNewAttList">
                             <li class="exNew1">
 
@@ -157,14 +162,15 @@
                             </li>
                         </ul>
                     </div>
-
+                    <!-- section for classic attractions -->
                     <div class="exClassicAttractions">
                         <h3 class="exRideDisplay" id="exClassicsT">The Classics</h3>
+                        <!-- unordered list of items for Classic Attractions -->
                         <ul class="exClaAttList" id="exClaAttList">
-
+                            <!-- individual list items for classic attractions -->
                             <li class="exCla1">
-                                <h4>Chekhov's Gun</h4><br>
-                                <p>Try out Archery and Rifle Shooting with qualified Coaches</p><br>
+                                <h4>Chekhov's Gun</h4>
+                                <p>Try out Archery and Rifle Shooting with qualified Coaches</p>
                             </li>
                             <li class="exCla2">
                                 <h4>Around the Tilt-A-Whirl in 80 ways</h4>
@@ -181,10 +187,11 @@
                             </li>
                         </ul>
                     </div>
-
+                    <!-- section defining all other attractions at the park -->
                     <div class="exAllOAtt">
                         <h3 id="exMoreT">More Rides and Attractions</h3>
                         <ul class="exAllOtherAttractions">
+                            <!-- a list with a list, dividing attractions into genre, and then further detailing the rides within those genres -->
                             <li class="exCC">
                                 <h4 id="exClassicsCove">Classics Cove</h4>
                                 <ul>
@@ -313,43 +320,53 @@
                         <h2 class="exMainDisplay">Upcoming Events</h2>
                         <p>Events you won't want to miss</p>
                     </div>
-
+                    <!-- section for upcoming events -->
                     <ol class="exEventsList">
                         <li class="event1">
                             <h4>Lunar New Year's - Bring on 2021!
-                                <span>
-                                    <a class="exTickets" href="tickets.html#buyHere">BOOK NOW</a>
-                                </span>
                             </h4>
-                            <p>Start the year with a bang at our world-renowned fireworks display and festival</p>
-                            <img src="images/ivan-aleksic-ioTPXrY_lyI-unsplash.jpg" alt="Upcoming Event - Lunar New Year's" height="200" class="exploreImageCat">
+                            <p>Start the year with a bang at our world-renowned fireworks display and festival<br>
+                                <!-- page break to keep book now section on it's own line. -->
+                              <br>
+                              <span>
+                                  <!-- call to action - "button" linking to ticket page to book now -->
+                                <a class="exBook" href="tickets.html#buyHere">BOOK NOW</a>
+                            </span>
+                            </p>
+                            
                         </li>
                         <li class="event2">
                             <h4>Perspective at the Park 2020
-                                <span>
-                                    <a class="exTickets" href="tickets.html#buyHere">BOOK NOW</a>
-                                </span>
                             </h4>
-                            <p>Photography competition 2020 - come join the world class!</p>
-                            <img src="images/boris-yue-gowrigaNHrg-unsplash.jpg" alt="Upcoming Event - Perspective at the Park 2020" height="200" class="exploreImageCat">
+                            <p>Photography competition 2020 - come join the world class!<br>
+                              <br>
+                              <span>
+                                <a class="exBook" href="tickets.html#buyHere">BOOK NOW</a>
+                            </span>
+                            </p>
+                            
                         </li>
                         <li class="event3">
                             <h4>Magic in the Moonlight Dance series
-                                <span>
-                                    <a class="exTickets" href="tickets.html#buyHere">BOOK NOW</a>
-                                </span>
                             </h4>
-                            <p>Some text about how awesome this event will be</p>
-                            <img src="images/k-x-i-t-h-v-i-s-u-a-l-s-OwFtCEEfskU-unsplash.jpg" alt="Upcoming Event - Magic in the Moonlight Dance series" width="150" class="exploreImageCat">
+                            <p>Some text about how awesome this event will be<br>
+                              <br>
+                              <span>
+                                <a class="exBook" href="tickets.html#buyHere">BOOK NOW</a>
+                            </span>
+                            </p>
+                            
                         </li>
                         <li class="event4">
-                            <h4>Summer in Storyland craft beer festival
-                                <span>
-                                    <a class="exTickets" href="tickets.html#buyHere">BOOK NOW</a>
-                                </span>
+                            <h4>Summer in Storyland festival
                             </h4>
-                            <p>Summer in the city doesn't have to be dry.</p>
-                            <img src="images/don-stone-hRLnetuNyMQ-unsplash.jpg" alt="Upcoming Event - Crafter's fest" width="150" class="exploreImageCat">
+                            <p>Summer in the city doesn't have to be dry.<br>
+                              <br>
+                              <span>
+                                <a class="exBook" href="tickets.html#buyHere">BOOK NOW</a>
+                            </span>
+                            </p>
+                            
                         </li>
                     </ol>
 
@@ -360,7 +377,6 @@
 
             <section
                 class="exFacilities&Directions">
-
 
                 <!-- additional section for facilities at, and directions to the park -->
                 <div class="exFacilities" id="Facilities">
@@ -374,32 +390,30 @@
                         <br>
                         ATMs available at all stores and food services, at the entrance to the park and by the main office.</p>
                 </div>
-
+                <!-- directions to the park -->
                 <div class="exDirections" id="Directions">
                     <h2>Getting here, and where to stay</h2>
                     <div class="exLocation">
                         <h3 class="exDirectionsH3">Location</h3>
-                        <p>Just past the turn at the end of the fork, on your way over and not before the old road. Take the m6 from the city and follow the flags</p>
+                        <p>Just past the turn at the end of the fork, on your way over and not before the old road.<br>
+                        Take the m6 from the city and follow the flags</p>
                         <address>
                             4 The way<br>
                             this road<br>
                             the county<br>
                             some country<br>
-                            A POSTAL CODE
-                            <br>
+                            A POSTAL CODE<br>
                         </address>
 
                     </div>
 
-                    <!-- map of the park - Clicking on 'Storyland' brings you up to the 
-                                          #Attractions page at the moment, need to figure out something better though - hover menu??-->
+                    <!-- the park on the map - Clicking on 'Storyland' brings you up to the #Attractions page at the moment-->
                     <div class="exDirectionsMap" id="exploreImageMap">
-                        <img src="images/exploreDirectionsMap.png" alt="Map to Storyland Park" width="750" height="422" usemap="#directionsMap">
+                        <img src="images/exploreDirectionsMap.png" alt="Map to Storyland Park" width="750" height="422" usemap="#directionsMap" class="exDirectionsMapImage">
                         <map name="directionsMap">
-                            <area class="exploreMap" shape="circle" coords="375,150,60" alt="Storyland Attractions Link" href="explore.html#Attractions">
+                            <area class="exploreMap" shape="circle" coords="420,170,80" alt="Storyland Attractions Link" href="index.html">
                         </map>
                     </div>
-                    <!-- <img src="images/wls_mlbn-tMqtFzyXiN4-unsplash.jpg" alt="Image of park at sunset" width="300" class="exploreImageCat"> -->
                     <h3 class="exDirectionsH3">Hotels & Accommodation</h3>
                     <p>
                         See our latest offers on our
@@ -411,16 +425,14 @@
 
                 </div>
             </section>
-
         </main>
 
         <aside
             class="ex twitter">
-
-            <!-- A:figuring out how to embed tweets -->
+            <!-- embedded tweets -->
             <h3>Testimonials</h3>
             <!--A:Reference to socials to show we can - but not actually linking to our own pages obviously- just some fun third-party page on twitter (@BirdPerHour) -->
-            <h4>Get in touch on twitter
+            <h4>Get in touch on twitter<br>
                 <span>
                     <a href="https://twitter.com/BirdPerHour" target="_blank" class="AB">@BirdPerHour</a>
                 </span>
@@ -428,7 +440,7 @@
 
             <p>Fan photos at the park:</p>
             <!-- code in class="twitter-tweet" from twitter publishing - https://publish.twitter.com/# -->
-            <ul class="exTwitGrid">
+            <ul class="exTwit">
                 <li class="ex1">
                     <blockquote class="twitter-tweet">
                         <p lang="und" dir="ltr">
@@ -518,5 +530,6 @@
             </div>
         </footer>
         <!-- END footer -->
+        
     </body>
 </html>

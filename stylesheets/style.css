@@ -1,6 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@700&display=swap');
-
+/* this page has been produced by members of team 18:
+Febin, Melissa, Zac & Anna, with initial input by Petra
+and no input from Hannes */
+/*
+ this page is laid out as follows:
+ remote font urls
+global page styles
+global navigation styles
+home page / index.html page styles
+ticket page / tickets.html styles
+explore page / explore.html styles
+ */
 /* default background styles */
 body {
     background:#0075A2;
@@ -20,6 +31,19 @@ main {
     max-width: 800px;
     margin-left: auto;
     margin-right: auto;
+}
+
+/* global selection / link / hover styles */
+::selection {
+    background-color: #FFFFFF;  
+}
+
+a:link {
+    color: #FFFFFF;
+}
+
+a:hover {
+    color: #7bdaff;
 }
 
 /* title styles */
@@ -1001,18 +1025,26 @@ form.tp {
 /*==== START EXPLORE [ex*] page styles ====*/
 /*=========================================*/
 
-
-
-/*
-[class*="ex"] 
-:not(h3) :not(h4)
- {
-    background-color: #7111B4;
-    color: rgb(43, 255, 0);
-
-*/
-
-
+/* this explore.html page is layed out according to its html flow
+it is broken into sections as follows:
+Explore page-specific generalstyling
+navigation
+sub navigation
+main body:
+        attractions 
+            -Map of the park, 
+            followed by a list of attractions:
+            -New
+            -Classic
+            -All Other Attractions
+followed by:
+events
+facilities
+directions
+testimonials
+footer */
+ 
+/* explore main styling */
 /* .ex general page grid */
 
 
@@ -1034,40 +1066,7 @@ aside.twitter{grid-area: aside;}
       'footer footer footer footer footer footer';
     
   }
-
-/* .ex attraction&events grid */
-
-
-/* .ex attractions grid */
-
-
-
-/* .ex facilities & directions grid */
-
-
-
-h1.exLanding {
-    position: relative;
-    font-size:4rem;
-    padding: 2rem;
-    margin-top: 8rem;;
-    background-color: greenyellow;
-    border-radius: 0.5rem;
-  
-}
-h2.exLanding {
-    position: relative;
-    padding: 2rem;
-    border-radius: 0.5rem;
-}
-#exTitle::first-letter {
-    font-size: 3rem;
-    color: #ff0064;
-    background-color: transparent;
-    
-}
-
-
+/* .ex main page styling */
 
  main.ex
 {
@@ -1078,17 +1077,6 @@ h2.exLanding {
         
 }
 
-#exTitle {
-    position: relative;
-    font-size:2rem;
-    padding: 1rem;
-    margin-top: 1rem;
-    background-color: transparent;
-    background-image: none;
-    max-width: 1000px;
-    border-radius: 0.5rem;
-
-} 
 main.ex h2 {
     padding: 1rem;
     border-radius: 0.5rem;
@@ -1099,10 +1087,6 @@ main.ex h3, main.ex h4, main.ex p {
     border-radius: 0.5rem;
 }
 
-/* main.ex p {
-    padding: 0.5rem;
-    border-radius: 0.5rem;
-} */
 
 body.explore {
     position: relative;
@@ -1126,6 +1110,8 @@ body.explore h2 {
     border-radius: 0.3rem;
     background-image: linear-gradient(to bottom right, coral, #ff0064);
     color: #ffffff;
+    border-color: white;
+    border-style: solid;
 }
 a:link.exTickets {
     color: #FF0064;
@@ -1137,6 +1123,46 @@ a:hover.exTickets {
     border-color: white;
     border-style: solid;
 }
+/* styling for book now "buttons" */
+.exBook {
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    color: #ff0064;
+    background-color: white;
+    background-image: none;
+    border-color: white;
+    border-style: solid;
+
+}
+/* a:link.exBook {
+    color: #FF0064;
+}  */
+a:hover.exBook {
+    background-image: linear-gradient(to bottom right, coral, #ff0064);
+    color: #ffffff;
+    border-color: white;
+    border-style: solid;
+}
+/* back to top icon styling */
+#exBackToTop {
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    background-color:#FF0064;
+    color: #ffffff;
+    position: fixed;
+    margin-right: 2rem;
+    margin-left: 0rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    right:0;
+    bottom:0;
+    z-index: 6000;
+}
+#exBackToTop:hover {
+
+    background-image: linear-gradient(to top, coral, #ff0064);
+}
+
 
 /* .ex-page-specific main nav navigation styling */
 .exNav {
@@ -1148,11 +1174,8 @@ div.info-bar h3 {
 }
 
 /* .ex page sub navigation menu styling */
-/* nav.exSubNav-text { grid-area: nav; } */
 
 nav.exSubNav-text{
-    /* background-color:#5EA4BF; */
-    /* text-align:justify; */
     padding-top: 0rem;
     padding-bottom: 0rem;
 }
@@ -1160,12 +1183,12 @@ nav.exSubNav-text{
 nav.exSubNav-text ol{
 
     list-style:none;
-    margin-top:55px;
+    margin-top:60px;
     padding:0rem;
     text-align:center;
-    margin-block-start: 3.5rem;
+    margin-block-start: 4rem;
     margin-block-end: 0rem;
-    
+    background-color: #5EA4BF;
 }
 
 nav.exSubNav-text li{
@@ -1173,8 +1196,6 @@ nav.exSubNav-text li{
     border: 2px solid white;
     border-radius: 0.5rem;
     padding:5px;
-    
-    
 }
 
 nav.exSubNav-text li a {
@@ -1199,18 +1220,38 @@ nav.exSubNav-text li a:hover {
     color: white;
 }
 
-/* .ex  attractions */
-/* .ex attractions grid layout */
+/* .ex  attractions section  */
+/* attractions form the first part of the main body:
+    -Map of the park, followed by a list of attractions:
+    -New
+    -Classic
+    -All Other Attractions
+followed by:
+events
+facilities
+directions
+testimonials
+footer */
+
+/* .ex 'Attractions Map' section */
+.exAttractionsMap {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 98%;
+    
+}
+/* .ex 'attractions' grid layout */
 
 
 
-/* .ex new attractions grid */
+/* .ex 'new attractions' grid */
 .exNew1{  grid-column: 1 / 2;
     grid-row: 1;}
-.exNew2{  grid-column: 2 / 3;
+.exNew2{  grid-column: 2 / 4;
     grid-row: 1;}
-.exNew3{  grid-column: 3 / 4;
-    grid-row: 1;}
+.exNew3{  grid-column: 1 / 5;
+    grid-row: 2;}
 .exNew4{  grid-column: 4 / 5;
     grid-row: 1;}
 
@@ -1228,69 +1269,77 @@ nav.exSubNav-text li a:hover {
 #exploreAttractionsMap ul {
     list-style-type: none;
 }
+/* 'new attractions' at the park individual styling- .exNew* */
 
+/* swim park styling */
 .exNew1 {
-    background-color: #ffffff;
+    background-color: #7111B4;
     border-radius: 0.5rem;
     border: 2px solid white;
     align-content: center;
-
-    background-image: linear-gradient(to bottom right, rgba(255, 190, 115, 0.99), rgba(255, 168, 7, 0.3)), 
-    url("../images/derek-thomson-vY86Rq8cfjQ-unsplash.jpg");
+    /* baby bg image */
+    background-image: linear-gradient(to bottom right, rgba(17, 98, 122, 0.99), rgba(255, 168, 7, 0.3)), 
+    url("../images/baby300px.png");
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-attachment: local;
     background-size: cover;
 }
+/* ladybird lounge styling */
 .exNew2{
-    background-color: #ffffff;
+    background-color: #0075A2;
     border-radius: 0.5rem;
     border: 2px solid white;
     align-content: center;
-
-    background-image: linear-gradient(to bottom right, rgba(255, 190, 115, 0.99), rgba(255, 168, 7, 0.3)), 
-    url("../images/kanyon-bollinger-D_W-652G3KE-unsplash.jpg");
+    /* jellyfish bg image */
+    background-image: linear-gradient(to bottom right, rgba(17, 98, 122, 0.99), rgba(255, 168, 7, 0.3)),  
+    url("../images/jellyfish500.png");
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-attachment: local;
     background-size: cover;
 }
+/* hungry caterpillar ride styling */
 .exNew3{
-    background-color: #ffffff;
+    background-color: #7111B4;
     border-radius: 0.5rem;
     border: 2px solid white;
     align-content: center;
-
-    background-image: linear-gradient(to bottom right, rgba(255, 190, 115, 0.99), rgba(255, 168, 7, 0.3)), 
-    url("../images/lily-banse-4lSxvOV3J3Y-unsplash.jpg");
+    /* waterslide bg image */
+    background-image: linear-gradient(to bottom right, rgba(41, 109, 121, 0.99), rgba(255, 168, 7, 0.3)), 
+    url("../images/slides500px.png");
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-attachment: local;
     background-size: cover;
 }
+/*  the oddyssey ride styling */
 .exNew4{
-    background-color: #ffffff;
+    background-color: #0075A2;
     border-radius: 0.5rem;
     border: 2px solid white;
     align-content: center;
-
-    background-image: linear-gradient(to bottom right, rgba(255, 190, 115, 0.99), rgba(255, 168, 7, 0.3)), 
+    /* roller coaster - sun glare - bg image */
+    background-image: linear-gradient(to bottom right, rgba(17, 98, 122, 0.99), rgba(255, 168, 7, 0.3)), 
     url("../images/jesse-adair-SANK_xON7Hw-unsplash.jpg");
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-attachment: local;
     background-size: cover;
 }
 
 
-/* .ex Classic Attractions grid */
+/* .ex Classic Attractions section */
+/* ClaAtt grid */
+
+/* class placement within the grid */
 .exCla1{  grid-column: 1 / 2;
-    grid-row: 1;}
-.exCla2{  grid-column: 2 / 3;
-    grid-row: 1;}
-.exCla3{  grid-column: 3 / 4;
-    grid-row: 1;}
-.exCla4{  grid-column: 4 / 5;
-    grid-row: 1;}
+    grid-row: 2;}
+.exCla2{  grid-column: 2 / 4;
+    grid-row: 2;}
+.exCla3{  grid-column: 4 / 5;
+    grid-row: 1 / 3;}
+.exCla4{  grid-column: 1 / 4;
+    grid-row: 1 / 2;}
 
 
-
+/* formatting rules of the grid */
 .exClaAttList {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -1300,62 +1349,70 @@ nav.exSubNav-text li a:hover {
 
   }
 
+  /* classics list style type - hiding the bullet points from the default list style */
 .exClassicAttractions ul {
     list-style-type: none;
 }
+/* Classic Attractions individual styling .exCla* */
 
+/* chekhov's gun ride styling */
 .exCla1 {
-    background-color: #ffffff;
+    background-color: #7111B4;
     border-radius: 0.5rem;
     border: 2px solid white;
     align-content: center;
-
+    /* Archery photo bg image */
     background-image: linear-gradient(to bottom right, rgba(255, 148, 115, 0.99), rgba(255, 168, 7, 0.3)), 
-    url("../images/MelissaMumArchery.JPG");
+    url("../images/melissaarchery225.png");
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-attachment: local;
     background-size: cover;
 }
+/* tilt-a-whirl styling */
 .exCla2 {
-    background-color: #ffffff;
+    background-color: #7111B4;
     border-radius: 0.5rem;
     border: 2px solid white;
     align-content: center;
-
+    /* swings bg image */
     background-image: linear-gradient(to bottom right, rgba(255, 115, 115, 0.99), rgba(255, 168, 7, 0.3)), 
-    url("../images/jerry-wang-kCt8GRWsOhU-unsplash.jpg");
+    url("../images/swings500px.png");
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-attachment: scroll;
     background-size: cover;
 }
+/* catch-22 ride styling */
 .exCla3 {
-    background-color: #ffffff;
+    background-color: #FF0064;
     border-radius: 0.5rem;
     border: 2px solid white;
     align-content: center;
-
-    background-image: linear-gradient(to bottom right, rgba(255, 190, 115, 0.99), rgba(255, 168, 7, 0.3)), 
-    url("../images/jesse-adair-SANK_xON7Hw-unsplash.jpg");
+    /* rollercoaster sun glare bg image */
+    background-image: linear-gradient(to bottom right, rgba(17, 98, 122, 0.99), rgba(255, 168, 7, 0.3)), 
+    url("../images/rollercoasterbright500px.png");
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-attachment: scroll;
     background-size: cover;
 }
+/* the hero's journey styling */
 .exCla4 {
-    background-color: #ffffff;
+    background-color: #7111B4;
     border-radius: 0.5rem;
     border: 2px solid white;
     align-content: center;
-
-    background-image: linear-gradient(to bottom right, rgba(255, 218, 115, 0.99), rgba(255, 168, 7, 0.3)), 
-    url("../images/boris-yue-gowrigaNHrg-unsplash.jpg");
+    /* carousel bg image */
+    background-image: linear-gradient(to bottom right, rgba(17, 98, 122, 0.99), rgba(255, 168, 7, 0.3)), 
+    url("../images/rollercoasterbright500px.png");
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-attachment: local;
     background-size: cover;
 }
 
 
 
 /* .ex More Attractions grid */
+
+/* class placement on grid - each item has it's own class */
 .exCC{  grid-column: 1 / 3;
     grid-row: 1;}
 .exAK{  grid-column: 3 / 5;
@@ -1374,7 +1431,7 @@ nav.exSubNav-text li a:hover {
         grid-row: 4;}
 
 
-
+/* grid format */
 .exAllOtherAttractions {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -1383,11 +1440,11 @@ nav.exSubNav-text li a:hover {
     padding: 1rem
 
   }
-
+/* other attractions list styling - hiding default styles */
 .exAllOAtt ul {
     list-style-type: none;
 }
-
+/* other attractions sublist h5 header styling */
 .exAllOAtt ul li ul li h5 {
     background-color: #5EA4BF;
     border-radius: 0.5rem;
@@ -1396,115 +1453,125 @@ nav.exSubNav-text li a:hover {
     margin-left: 0rem;
 
 }
+/* 'more attractions' sub section styling below */
 
+/* Classics cove styling - CC */
 .exCC{
     background-color: #7111B4;
     border-radius: 0.5rem;
     border: 2px solid white;
     align-content: center;
-
-    background-image: linear-gradient(to bottom right, rgba(255, 190, 115, 0.99), rgba(255, 168, 7, 0.3)), 
-    url("../images/boris-yue-gowrigaNHrg-unsplash.jpg");
+    /* snowy coaster bg image */
+    background-image: linear-gradient(to bottom right, rgba(17, 98, 122, 0.99), rgba(255, 168, 7, 0.3)),
+    url("../images/snowcoaster600.png");
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-attachment: scroll;
     background-size: cover;
 }
+/* Animal kingdom styling - AK */
 .exAK{
     background-color: #7111B4;
     border-radius: 0.5rem;
     border: 2px solid white;
     align-content: center;
-
+    /* jellyfish bg image */
     background-image: linear-gradient(to bottom right, rgba(255, 0, 85, 0.99), rgba(255, 7, 19, 0.3)), 
-    url("../images/popular-ride-3.jpg");
+    url("../images/jellyfish500.png");
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-attachment: scroll;
     background-size: cover;
 }
+/* mystery zone styling - MZ */
 .exMZ{
     background-color: #7111B4;
     border-radius: 0.5rem;
     border: 2px solid white;
     align-content: center;
-
+    /* person in neon lights bg image */
     background-image: linear-gradient(to bottom right, rgba(255, 0, 85, 0.99), rgba(255, 7, 19, 0.3)), 
-    url("../images/popular-ride-3.jpg");
+    url("../images/neon500.png");
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-attachment: scroll;
     background-size: cover;
 }
+/* sci-fi sphere styling - SS */
 .exSS{
     background-color: #7111B4;
     border-radius: 0.5rem;
     border: 2px solid white;
     align-content: center;
-
-    background-image: linear-gradient(to bottom right, rgba(255, 190, 115, 0.99), rgba(255, 168, 7, 0.3)), 
-    url("../images/boris-yue-gowrigaNHrg-unsplash.jpg");
+    /* slides bg image */
+    background-image: linear-gradient(to bottom right, rgba(17, 98, 122, 0.99), rgba(255, 168, 7, 0.3)), 
+    url("../images/slides500px.png");
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-attachment: scroll;
     background-size: cover;
 }
+/* reading retreat styling  - ReR */
 .exReR{
     background-color: #7111B4;
     border-radius: 0.5rem;
     border: 2px solid white;
     align-content: center;
-
-    background-image: linear-gradient(to bottom right, rgba(255, 190, 115, 0.99), rgba(255, 168, 7, 0.3)), 
-    url("../images/boris-yue-gowrigaNHrg-unsplash.jpg");
+    /* father daughter at park */
+    background-image: linear-gradient(to bottom right, rgba(17, 98, 122, 0.99), rgba(255, 168, 7, 0.3)),  
+    url("../images/mangirl500.png");
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-attachment: scroll;
     background-size: cover;
 }
+/* fantasy forest styling - FF */
 .exFF{
-    background-color: #ffc21b;
+    background-color: #FF0064;
     border-radius: 0.5rem;
     border: 2px solid white;
     align-content: center;
-
+    /* woman by a carousel bg image */
     background-image: linear-gradient(to bottom right, rgba(255, 0, 85, 0.99), rgba(255, 7, 19, 0.3)), 
-    url("../images/popular-ride-3.jpg");
+    url("../images/womanCarousel500.png");
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-attachment: scroll;
     background-size: cover;
 }
+/* romance road styling - RoR */
 .exRoR{
     background-color: #7111B4;
     border-radius: 0.5rem;
     border: 2px solid white;
     align-content: center;
-
+    /* rollercoaster - pop ride - bg image */
     background-image: linear-gradient(to bottom right, rgba(255, 0, 85, 0.99), rgba(255, 7, 19, 0.3)), 
-    url("../images/popular-ride-3.jpg");
+    url("../images/popride500.png");
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-attachment: scroll;
     background-size: cover;
 }
+/* horror trail styling - HT */
 .exHT{
-    background-color: #ffc21b;
+    background-color:#0075A2;
     border-radius: 0.5rem;
     border: 2px solid white;
     align-content: center;
-    background-image: linear-gradient(to bottom right, rgba(255, 190, 115, 0.99), rgba(255, 168, 7, 0.3)), 
-    url("../images/boris-yue-gowrigaNHrg-unsplash.jpg");
-
-    /* background-image: linear-gradient(to bottom right, rgba(255, 0, 85, 0.99), rgba(255, 7, 19, 0.3)), 
-    url("../images/popular-ride-3.jpg"); */
+    /* stressed person by a carousel bg image */
+    background-image: linear-gradient(to bottom right, rgba(17, 98, 122, 0.99), rgba(255, 168, 7, 0.3)),
+    url("../images/stressedpark600.png");
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-attachment: scroll;
     background-size: cover;
 }
 
-/*  */
+/* main display styling for h2 element */
 h2.exMainDisplay {
     margin-bottom: 0rem;
     padding-bottom: 0rem;
 }
+
+/* rides and attractions title styling */
 #exRandAT {
     border-bottom-left-radius: 0rem;
     border-bottom-right-radius: 0rem;
 }
+/* call to action - (click on the map) - styling */
 #exClickMapCall {
     background-color: #7111B4;
     background-image: none;
@@ -1518,13 +1585,6 @@ h2.exMainDisplay {
 
 }
 
-
-.exNewAttractions {
-
-}
-#exNewT {
-
-}
 .exNewAttList {
 
     list-style: none;
@@ -1535,18 +1595,6 @@ h2.exMainDisplay {
     border-radius: 0.5rem;
 }
 
-.exClassicAttractions {
-
-}
-#exClassicT {
-
-}
-.exAllOtherAttractions {
-
-}
-#exMoreT {
-
-}
 .exploreAttractions {
     background-color: #5EA4BF;
     border-radius: 0.5rem;
@@ -1554,14 +1602,15 @@ h2.exMainDisplay {
 .exploreAttractions p, .exploreAttractions h4 {
     background-color: transparent;
 }
-/* .ex events */
+
+/* .ex events section styling */
 
 #Events {
     background-color: #5EA4BF;
     border-radius: 0.5rem;
 }
 /*  .ex events grid */
-
+/* class specific placement on grid */
 .event1{  grid-column: 1 / 3;
     grid-row: 1;}
 .event2{  grid-column: 3 / 5;
@@ -1572,7 +1621,7 @@ h2.exMainDisplay {
     grid-row: 2;}
 
 
-
+/* grid format for items in class .exEventsList */
 .exEventsList {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -1582,33 +1631,81 @@ h2.exMainDisplay {
 
   }
 
+  /* removing the default list styling */
 #Events ol {
     list-style-type: none;
 }
 
-.event1, .event2, .event3, .event4{
+/*  individual events styling below */
+
+/* Lunar new years event styles */
+.event1{
     background-color: #FF0064;
     border-radius: 0.5rem;
     border: 2px solid white;
     align-content: center;
-
+    /* dragon bg image */
     background-image: linear-gradient(to bottom right, rgba(255, 0, 85, 0.99), rgba(255, 7, 19, 0.3)), 
-    url("../images/popular-ride-3.jpg");
+    url("../images/dragon300px.png");
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-attachment: scroll;
+    background-size: cover;
+}
+/* perspective at the park event styles */
+.event2{
+    background-color: #FF0064;
+    border-radius: 0.5rem;
+    border: 2px solid white;
+    align-content: center;
+    /* carousel bg image */
+    background-image: linear-gradient(to bottom right, rgba(255, 0, 85, 0.99), rgba(255, 7, 19, 0.3)), 
+    url("../images/carousel.png");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+}
+/* magic in the moonlight styles */
+.event3{
+    background-color: #FF0064;
+    border-radius: 0.5rem;
+    border: 2px solid white;
+    align-content: center;
+    /* neon lights bg image */
+    background-image: linear-gradient(to bottom right, rgba(255, 0, 85, 0.99), rgba(255, 7, 19, 0.3)), 
+    url("../images/neon500.png");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+}
+/* summer festival styles */
+.event4{
+    background-color: #FF0064;
+    border-radius: 0.5rem;
+    border: 2px solid white;
+    align-content: center;
+    /* friends at a bar table bg image */
+    background-image: linear-gradient(to bottom right, rgba(255, 0, 85, 0.99), rgba(255, 7, 19, 0.3)), 
+    url("../images/bartable600.png");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
     background-size: cover;
 }
 
+/*  individual event title styling */
 .event1 h4, .event2 h4, .event3 h4, .event4 h4 {
-    background-color: #5EA4BF;
-    font-size: 1rem;
+    background-color: transparent;
+    font-size: 1.5rem;
     font-weight: bold;
     padding: 0.2rem;
     border-top: 0.5rem;
+    margin-bottom: 0rem;
+    
 }
+/*  event paragraph styling */
 .event1 p, .event2 p, .event3 p, .event4 p {
     background-color: transparent;
 }
+/*  event image styling */
 .event1 img, .event2 img, .event3 img, .event4 img {
     padding:1rem;
     height: 200px;
@@ -1624,31 +1721,39 @@ h2.exMainDisplay {
 }
 
 /* .ex directions css */
-
+/* .ex directions section main styling */
 .exDirections {
     position:relative;
     background-color: #7111B4;
     border-radius: 0.5rem;
-    background-image: url("wls_mlbn-tMqtFzyXiN4-unsplash.jpg");
+    background-image: linear-gradient(to bottom right, rgba(255, 148, 115, 0.99), rgba(255, 168, 7, 0.3)), 
+    url("../images/sand10by5.png");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
 } 
+/* .ex directions h3 title styling */
 h3.exDirectionsH3 {
     border-radius: none;
     background-image: none;
 }
+/* directions paragraph styling */
 .exDirections p {
     background-color: transparent;
 }
 .exDirections address {
-    float:left;
     margin: 1rem;
 }
-.directionsMap {
-    position: relative;
-    float: right;
-    margin: 2rem;
+/*  directions map styling - not to be confused with the park attractions map */
+.exDirectionsMapImage {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 85%;
+    height: 85%
 
 }
-/* ,ex socials - twitter aside */
+/* .ex socials - twitter aside */
 aside.twitter :not(h3) {
     padding-left: 1rem;
 }
@@ -1671,18 +1776,3 @@ aside.twitter ul li {
 /*=========================================*/
 
 
-
-/* trying out some colors for links - have to be slightly different from the 
-main colour scheme so that they contrast in all situations, 
-just picked some random slightly lighter/darker versions to keep in style - A */
-::selection {
-    background-color: #FFFFFF;  
-}
-
-a:link {
-    color: #FFFFFF;
-}
-
-a:hover {
-    color: #7bdaff;
-}
