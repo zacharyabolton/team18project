@@ -1176,8 +1176,8 @@ nav.exSubNav-text ol{
     margin-top:60px;
     padding:0rem;
     text-align:center;
-    margin-block-start: 4rem;
-    margin-block-end: 0rem;
+    margin-top: 4rem;
+    margin-bottom: 0rem;
     background-color: #5EA4BF;
 }
 /* styling list item in an element <nav> of class exSubNav-text */
@@ -1639,9 +1639,9 @@ h2.exMainDisplay {
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-size: cover;
-}s
+}
 /* perspective at the park event styles */
-.event2{
+.event2 {
     background-color: #FF0064;
     border-radius: 0.5rem;
     border: 2px solid white;
@@ -1721,11 +1721,7 @@ h2.exMainDisplay {
     background-attachment: scroll;
     background-size: cover;
 } 
-/* .ex directions h3 title styling */
-h3.exDirectionsH3 {
-    border-radius: none;
-    background-image: none;
-}
+
 /* directions paragraph styling */
 .exDirections p {
     background-color: transparent;
