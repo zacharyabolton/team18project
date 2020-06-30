@@ -814,6 +814,11 @@ a.BuyNow {
     margin : 0px auto;
 }
 
+/*make changes to links with BuyNow class on hover*/
+a.BuyNow:hover {
+    color : #5EA4BF;
+}
+
 /*ticketTypes class (the container for all ticket type divs)*/
 .ticketTypes {
     display: grid;
