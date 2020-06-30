@@ -1127,6 +1127,7 @@ a:hover.exTickets {
     background-image: none;
     border-color: white;
     border-style: solid;
+    font-weight: bolder;
 }
 
 a:hover.exBook {
@@ -1184,7 +1185,7 @@ nav.exSubNav-text ol {
 /* styling list item in an element <nav> of class exSubNav-text */
 nav.exSubNav-text li {
     display:inline;
-    border: none;
+    border: 2px solid white;
     border-radius: 0.5rem;
     padding:5px;
 }
@@ -1205,7 +1206,7 @@ nav.exSubNav-text li:hover {
 
     color: white;
     background-image: linear-gradient(to bottom right, #ff0064, coral);
-    border: none;
+    border: 2px solid white;
 }
 /* styling element <a> in list item in an element <nav> of class exSubNav-text on hover */
 nav.exSubNav-text li a:hover, nav.exSubNav-text li a:hover {
@@ -1246,7 +1247,7 @@ nav.exMapNav-text li a  {
 nav.exMapNav-text li:hover {
 
     color: white;
-    background-image: linear-gradient(to bottom right, #ff0064, coral);
+    background-image: linear-gradient(to bottom right, #044d69, #7111b4 );
 
 }
 
@@ -1634,6 +1635,12 @@ footer */
     background-color: #5EA4BF;
     border-radius: 0.5rem;
 }
+.exEventsCopy {
+    display: inline-block;
+    margin: 0;
+    border: none;
+    padding:orem;
+}
 /*  .ex events grid */
 /* class specific placement on grid */
 .event1{  grid-column: 1 / 3;
@@ -1652,7 +1659,10 @@ footer */
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 1rem;
     grid-auto-rows: minmax(100px, auto);
-    padding: 1rem
+    padding-top: 0rem;
+    padding-bottom: 1rem;
+    padding-left: 0rem;
+    padding-right: 0rem;
 
   }
 
