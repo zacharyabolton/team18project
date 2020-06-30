@@ -1035,9 +1035,9 @@ main body:
         attractions 
             -Map of the park, 
             followed by a list of attractions:
-            -New
-            -Classic
-            -All Other Attractions
+                -New
+                -Classic
+                -All Other Attractions
 followed by:
 events
 facilities
@@ -1069,7 +1069,7 @@ aside.twitter{grid-area: aside;}
   }
 /* .ex main page styling */
 
- main.ex
+main.ex
 {
         position: relative;
         max-width: 1000px;
@@ -1167,12 +1167,12 @@ div.info-bar h3 {
 
 /* .ex page sub navigation menu styling */
 /* styling element <nav> of class exSubNav-text */
-nav.exSubNav-text{
+nav.exSubNav-text, .exMapNav-text {
     padding-top: 0rem;
     padding-bottom: 0rem;
 }
 /* styling ordered list in an element <nav> of class exSubNav-text */
-nav.exSubNav-text ol{
+nav.exSubNav-text ol {
     list-style:none;
     margin-top:60px;
     padding:0rem;
@@ -1182,9 +1182,9 @@ nav.exSubNav-text ol{
     background-color: #5EA4BF;
 }
 /* styling list item in an element <nav> of class exSubNav-text */
-nav.exSubNav-text li{
+nav.exSubNav-text li {
     display:inline;
-    border: 2px solid white;
+    border: none;
     border-radius: 0.5rem;
     padding:5px;
 }
@@ -1205,17 +1205,59 @@ nav.exSubNav-text li:hover {
 
     color: white;
     background-image: linear-gradient(to bottom right, #ff0064, coral);
-    border-color: white;
-    border-style: solid;
+    border: none;
 }
 /* styling element <a> in list item in an element <nav> of class exSubNav-text on hover */
-nav.exSubNav-text li a:hover {
+nav.exSubNav-text li a:hover, nav.exSubNav-text li a:hover {
     color: white;
+}
+/* .ex page map sub navigation menu styling */
+
+/* styling ordered list in an element <nav> of class exMapNav-text */
+nav.exMapNav-text ol{
+    list-style:none;
+    margin-top:0px;
+    padding:0rem;
+    text-align:center;
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+}
+nav.exMapNav-text li{
+    display:inline;
+    border: none;
+    border-radius: 0.5rem;
+    padding:5px;
+    background-color: #7111B4;
+
+}
+nav.exMapNav-text li a  {
+    font-family: Poppins, Arial, Helvetica, sans-serif;
+    font-style: normal;
+    text-decoration: none;
+    font-variant: normal;
+    font-weight: bolder;
+    font-size: 1em;
+    color: white;
+    margin-top: 1rem;
+    display:inline-block;
+    border-style: none;
+    padding:3px; 
+}
+nav.exMapNav-text li:hover {
+
+    color: white;
+    background-image: linear-gradient(to bottom right, #ff0064, coral);
+
+}
+
+h2.exMainDisplay {
+    margin-bottom: 0rem;
+    padding-bottom: 0rem;
 }
 
 /* .ex  attractions section  */
-/* attractions form the first part of the main body:
-    -Map of the park, followed by a list of attractions:
+/* attractions form the first part of the main body of explore.html:
+    -Map of the park & navigation (for navigation, see above: exSubMapNav*), followed by a list of attractions:
     -New
     -Classic
     -All Other Attractions
@@ -1225,6 +1267,41 @@ facilities
 directions
 testimonials
 footer */
+/* park map navigation list styles */
+/* .ex-page-specific main nav navigation styling */
+/* main display styling for h2 element */
+/* rides and attractions title styling */
+
+
+.exNewAttList {
+    list-style: none;
+}
+
+.exploreAttractions {
+    background-color: #5EA4BF;
+    border-radius: 0.5rem;
+}
+.exploreAttractions p, .exploreAttractions h4 {
+    background-color: transparent;
+}
+.exploreAttractions h4 {
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+
+/* call to action - (click on the map) - styling */
+#exClickMapCall {
+    background-color: #7111B4;
+    background-image: none;
+    margin-top: 0rem;
+    padding-left: 1.8rem;
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+    padding-right: 0rem;
+    border-top-right-radius: 0rem;
+    border-top-left-radius: 0rem;
+
+}
 
 /* .ex 'Attractions Map' section */
 .exAttractionsMap {
@@ -1236,9 +1313,9 @@ footer */
 
 /* .ex 'attractions' grid layout */
 /* .ex 'new attractions' grid */
-.exNew1{  grid-column: 1 / 2;
+.exNew1{  grid-column: 1 / 3;
     grid-row: 1;}
-.exNew2{  grid-column: 2 / 4;
+.exNew2{  grid-column: 3 / 4;
     grid-row: 1;}
 .exNew3{  grid-column: 1 / 5;
     grid-row: 2;}
@@ -1550,48 +1627,6 @@ footer */
     background-size: cover;
 }
 
-/* main display styling for h2 element */
-h2.exMainDisplay {
-    margin-bottom: 0rem;
-    padding-bottom: 0rem;
-}
-
-/* rides and attractions title styling */
-#exRandAT {
-    border-bottom-left-radius: 0rem;
-    border-bottom-right-radius: 0rem;
-}
-/* call to action - (click on the map) - styling */
-#exClickMapCall {
-    background-color: #7111B4;
-    background-image: none;
-    margin-top: 0rem;
-    padding-left: 1.8rem;
-    padding-top: 0rem;
-    padding-bottom: 0rem;
-    padding-right: 0rem;
-    border-top-right-radius: 0rem;
-    border-top-left-radius: 0rem;
-
-}
-
-.exNewAttList {
-
-    list-style: none;
-}
-.exNewAttList li{
-
-    background-color: #ff0064;
-    border-radius: 0.5rem;
-}
-
-.exploreAttractions {
-    background-color: #5EA4BF;
-    border-radius: 0.5rem;
-}
-.exploreAttractions p, .exploreAttractions h4 {
-    background-color: transparent;
-}
 
 /* .ex events section styling */
 
