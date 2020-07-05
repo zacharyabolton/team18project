@@ -1251,11 +1251,12 @@ nav.exSubNav-text li a:hover, nav.exSubNav-text li a:hover {
 /* styling ordered list in an element <nav> of class exMapNav-text */
 nav.exMapNav-text ol{
     list-style:none;
-    margin-top:0px;
-    padding:0rem;
+    padding:1rem;
     text-align:center;
     margin-top: 0rem;
     margin-bottom: 0rem;
+    border-radius: 0.5rem;
+    animation: exClickButtonAnim 0.8s ease 3s 2 alternate none;
 }
 nav.exMapNav-text li{
     display:inline;
@@ -1263,12 +1264,11 @@ nav.exMapNav-text li{
     border-radius: 0.5rem;
     padding:5px;
     background-color: #7111B4;
-    animation: exClickButtonAnim 0.8s ease 3s 2 alternate forwards;
 }
-
+/* in conjunction with exClickButton/.exClickAtt2 highlights alternative map functionality for accessibility - menu buttons */
 @keyframes exClickButtonAnim {
-    from {background-color: #7111B4;}
-    to {background-color: #FF0064;}
+    from {background-color: transparent;}
+    to {background-color:  #FF0064;}
 }
 nav.exMapNav-text li a  {
     font-family: Poppins, Arial, Helvetica, sans-serif;
@@ -1278,17 +1278,19 @@ nav.exMapNav-text li a  {
     font-weight: bolder;
     font-size: 1em;
     color: white;
-    margin-top: 1rem;
     display:inline-block;
     border-style: none;
-    padding:3px; 
+    padding: 0.5rem; 
 }
-nav.exMapNav-text li:hover {
+/* hover animation for the map navigation menu */
+#exMapNav li:hover {
 
     color: white;
     animation-name: exmapnav;
+    animation-delay: unset;
+    animation-iteration-count: 1;
     animation-duration: .3s;
-    animation-fill-mode: both;
+    animation-fill-mode: forwards;
 
 }
 
@@ -1337,12 +1339,20 @@ footer */
     font-weight: bolder;
 }
 
+/* Rides and Attractions specific title border styling */
+#exRandAT {
+    border-bottom-right-radius: 0rem;
+    border-bottom-left-radius: 0rem;
+    border-top-right-radius: 0.5rem;
+    border-top-left-radius: 0.5rem;
+}
+
 /* call to action - (click on the map) - styling */
 #exClickMapCall {
     background-color: #7111B4;
     background-image: none;
     margin-top: 0rem;
-    padding-left: 1.8rem;
+    padding-left: 2rem;
     padding-top: 0rem;
     padding-bottom: 0rem;
     padding-right: 0rem;
@@ -1356,6 +1366,9 @@ footer */
     display: block;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 0rem;
+    margin-top: 0rem;
+    padding: 0rem;
     width: 98%;  
     
 }
@@ -1376,7 +1389,7 @@ exClickAtt2 on a 3s delay to show secondary function of menu buttons options aft
     from {color:white;}
     to {color: #ff0064;}
 }
-
+/* in conjunction with exClickMap/.exClickAtt1 highlights map functionality */
 #exploreAttMap {
     border: 4px solid white;
     animation: exaware 0.8s ease 1s 2 alternate forwards;
@@ -1405,8 +1418,7 @@ exClickAtt2 on a 3s delay to show secondary function of menu buttons options aft
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 1rem;
     grid-auto-rows: minmax(100px, auto);
-    padding: 1rem
-
+    padding: 1rem;
   }
 
 #exploreAttractionsMap ul {
