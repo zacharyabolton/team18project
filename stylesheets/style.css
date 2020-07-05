@@ -1143,10 +1143,12 @@ a:hover.exTickets {
     border-style: solid;
     font-weight: bolder;
 }
+a#book1, a:hover#book2, #book3:link, #book4:link {
+    color: #ff0064;
+}
 
 a:hover.exBook {
     background-image: linear-gradient(to bottom right, coral, #ff0064);
-    color: #ffffff;
     border-color: white;
     border-style: solid;
     animation-name: extickets;
@@ -1469,7 +1471,7 @@ exClickAtt2 on a 3s delay to show secondary function of menu buttons options aft
     background-attachment: local;
     background-size: cover;
 }
-/*  the oddyssey ride styling */
+/*  the odd-yssey ride styling */
 .exNew4{
     background-color: #0075A2;
     border-radius: 0.5rem;
@@ -1477,7 +1479,7 @@ exClickAtt2 on a 3s delay to show secondary function of menu buttons options aft
     align-content: center;
     /* roller coaster - sun glare - bg image */
     background-image: linear-gradient(to bottom right, rgba(17, 98, 122, 0.99), rgba(255, 168, 7, 0.3)), 
-    url("../images/jesse-adair-SANK_xON7Hw-unsplash.jpg");
+    url("../images/swings500px.png");
     background-repeat: no-repeat;
     background-attachment: local;
     background-size: cover;
