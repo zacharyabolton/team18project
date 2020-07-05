@@ -1126,7 +1126,8 @@ a:hover.exTickets {
 }
 
 @keyframes extickets {
-    from {background-image: linear-gradient(to bottom right, coral, #ff0064);}
+    from {background-image: linear-gradient(to bottom right, coral, #ff0064);
+        color: #ffffff;}
     to {background-image: none;
         background-color: rgba(255, 255, 255, 1);
         color: #ff0064;
