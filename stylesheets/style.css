@@ -1117,12 +1117,21 @@ a:link.exTickets {
     color: #FFF;
 } 
 a:hover.exTickets {
-    color: #ff0064;
-    background-color: white;
-    background-image: none;
+    color: white;
     border-color: white;
     border-style: solid;
+    animation-name: extickets;
+    animation-duration: .3s;
+    animation-fill-mode: both;
 }
+
+@keyframes extickets {
+    from {background-image: linear-gradient(to bottom right, coral, #ff0064);}
+    to {background-image: none;
+        background-color: rgba(255, 255, 255, 1);
+        color: #ff0064;
+    }
+  }
 /* styling for book now "buttons" */
 .exBook {
     padding: 0.5rem;
@@ -1155,10 +1164,22 @@ a:hover.exBook {
     right:0;
     bottom:0;
     z-index: 6000;
+    animation-name: exBTT;
+    animation-duration: .7s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 2;
 }
 #exBackToTop:hover {
 
     background-image: linear-gradient(to top, coral, #ff0064);
+}
+
+@keyframes exBTT {
+from {   
+          margin-bottom: 2rem;
+}
+to { 
+        margin-bottom: 3rem;}
 }
 
 
@@ -1210,12 +1231,20 @@ nav.exSubNav-text li a {
 nav.exSubNav-text li:hover {
 
     color: white;
-    background-image: linear-gradient(to bottom right, #ff0064, coral);
+    background-image: none;
     border: 2px solid white;
+    animation-name: exsubnav;
+    animation-duration: .3s;
+    animation-fill-mode: both;
 }
+
+@keyframes exsubnav {
+    from {background-color: rgba(255, 255, 255, 0);}
+    to {background-color: rgba(255, 255, 255, 1);}
+  }
 /* styling element <a> in list item in an element <nav> of class exSubNav-text on hover */
 nav.exSubNav-text li a:hover, nav.exSubNav-text li a:hover {
-    color: white;
+    color: #ff0064;
 }
 /* .ex page map sub navigation menu styling */
 
@@ -1234,7 +1263,12 @@ nav.exMapNav-text li{
     border-radius: 0.5rem;
     padding:5px;
     background-color: #7111B4;
+    animation: exClickButtonAnim 0.8s ease 3s 2 alternate forwards;
+}
 
+@keyframes exClickButtonAnim {
+    from {background-color: #7111B4;}
+    to {background-color: #FF0064;}
 }
 nav.exMapNav-text li a  {
     font-family: Poppins, Arial, Helvetica, sans-serif;
@@ -1252,9 +1286,17 @@ nav.exMapNav-text li a  {
 nav.exMapNav-text li:hover {
 
     color: white;
-    background-image: linear-gradient(to bottom right, #044d69, #7111b4 );
+    animation-name: exmapnav;
+    animation-duration: .3s;
+    animation-fill-mode: both;
 
 }
+
+@keyframes exmapnav {
+    from {background-image: none;
+        background-color: #7111B4;}
+    to {background-color: #FF0064;}
+  }
 
 h2.exMainDisplay {
     margin-bottom: 0rem;
@@ -1315,7 +1357,35 @@ footer */
     margin-left: auto;
     margin-right: auto;
     width: 98%;  
+    
 }
+/* animations to call attention to page functionality - highlight where to click to learn more.
+exClickAtt2 on a 3s delay to show secondary function of menu buttons options after .exClick1 and exaware highlights the map. */
+.exClickAtt2 {
+    animation: exClickButton 0.8s ease 3s 2 alternate forwards;
+}
+@keyframes exClickButton {
+    from {color:white;}
+    to {color: #ff0064;}
+}
+
+.exClickAtt1 {
+    animation: exClickMap 0.8s ease 1s 2 alternate forwards;
+}
+@keyframes exClickMap {
+    from {color:white;}
+    to {color: #ff0064;}
+}
+
+#exploreAttMap {
+    border: 4px solid white;
+    animation: exaware 0.8s ease 1s 2 alternate forwards;
+}
+@keyframes exaware {
+    from {border-color: #FFFFFF;}
+    to {border-color: #FF0064;}
+  }
+
 
 /* .ex 'attractions' grid layout */
 /* .ex 'new attractions' grid */
