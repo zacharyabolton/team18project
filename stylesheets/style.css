@@ -1149,6 +1149,10 @@ a:hover.exBook {
     color: #ffffff;
     border-color: white;
     border-style: solid;
+    animation-name: extickets;
+    animation-duration: .2s;
+    animation-fill-mode: none;
+    animation-direction: reverse;
 }
 /* back to top icon styling */
 #exBackToTop {
