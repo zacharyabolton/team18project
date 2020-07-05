@@ -1143,7 +1143,7 @@ a:hover.exTickets {
     border-style: solid;
     font-weight: bolder;
 }
-a#book1, a:hover#book2, #book3:link, #book4:link {
+a:link#book1, a:link#book2, a:link#book3, a:link#book4 {
     color: #ff0064;
 }
 
